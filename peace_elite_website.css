@@ -8,7 +8,8 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000; /* 修改背景色为黑色 */
+    color: #fff; /* 修改文本颜色为白色 */
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #ff0000; /* 修改顶部导航栏的背景色为红色 */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -58,15 +59,27 @@ nav ul li a:hover {
     padding: 100px 0;
     text-align: center;
     color: #fff;
+    animation: fadeIn 1s ease-in-out; /* 添加淡入动画 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #ffcc00; /* 修改标题文字颜色为黄色 */
 }
 
 .hero p {
     font-size: 18px;
+    color: #ffcc00; /* 修改段落文字颜色为黄色 */
 }
 
 /* Features Section */
@@ -78,6 +91,18 @@ nav ul li a:hover {
 .feature {
     text-align: center;
     margin-bottom: 40px;
+    animation: slideInUp 1s ease-in-out; /* 添加向上滑入动画 */
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .feature i {
