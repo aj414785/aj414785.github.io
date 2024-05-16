@@ -1,10 +1,125 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>和平精英官网</title>
-    <link rel="stylesheet" href="peace_elite_website.css">
+    <base href="https://gp.qq.com/main.shtml">
+    <meta charset="gbk">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent">
+    <meta name="Copyright" content="Tencent">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="《和平精英》是腾讯光子工作室群自研打造的战术竞技手游。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验。">
+    <meta name="Keywords" content="PEL职业联赛,PEC职业联赛,和平精英, 和平精英手游, 腾讯和平精英, 和平精英手游下载, 和平精英公测 ,和平精英手游公测, 腾讯和平精英公测,  勇者同行, 和平精英官网 ">
+    <title>官网首页-和平精英-官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/web201908/css/public.css">
+    <link rel="stylesheet" href="/web201908/css/slide-munu.css">
+    <link rel="stylesheet" href="/web201908/css/main.css"><!-- 页面设计：微聚科技 | 页面制作：微聚科技 | 创建：2019-08-03 -->
+    <style>
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        #stars {
+            margin: 0 auto;
+            max-width: 1600px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 500;
+            pointer-events: none;
+        }
+
+        .star {
+            width: 1px;
+            display: block;
+            position: relative;
+            opacity: 0;
+            /*过渡动画*/
+            animation: star-fall 3s linear infinite;
+        }
+
+        .star::after {
+            content: "";
+            display: block;
+            border: solid;
+            border-width: 0px 90px 2px 90px;
+            /*流星随长度逐渐缩小*/
+            border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+            /* border-radius: 2px 0 0 2px; */
+            transform: rotate(200deg);
+            transform-origin: 0% 100%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes star-fall {
+            0% {
+                opacity: 0;
+                transform: scale(0.4) translate3d(0, 0, 0);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.5) translate3d(600px, 200px, 0);
+            }
+        }
+
+        .section6 {
+            width: 100%;
+            height: auto;
+            background: #fff;
+            margin-top: 15px;
+            position: relative;
+            z-index: 9;
+            padding-bottom: 50px;
+            display: none;
+        }
+
+        .sec6_content {
+            width: 1200px;
+            min-height: auto;
+            margin: 0 auto;
+        }
+
+        .sec6_content ul {
+            width: 100%;
+            height: auto;
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sec6_content ul li {
+            margin-right: 60px;
+            margin-top: 40px;
+        }
+
+        .bg3 {
+            height: auto;
+            background: #f4f4f4;
+            text-indent: -9999px;
+        }
+
+        .cont {
+            width: 100%;
+            position: static;
+            background: #f4f4f4;
+        }
+
+        .sec5_swiper_wrap {
+            padding-bottom: 100px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,7 +151,7 @@
 
         <!-- 赠送皮肤部分 -->
         <section id="赠送皮肤">
-            <h2>赠送皮肤</h2>
+           <h2>赠送皮肤</h2>
             <form id="skin-giveaway-form">
                 <label for="name">姓名：</label>
                 <input type="text" id="name" name="name" required><br><br>
@@ -132,5 +247,18 @@
             <li>视频好和平精英专区</li>
         </ul>
     </footer>  
-<script src="peace_elite_website.js"></script>
-</
+
+    <script>
+        // 判断页面跳转
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|MeeGo|SymbianOS/i.test(
+                navigator.userAgent
+            )
+        ) {
+            window.location.href = "/m/m201908/m_main.shtml" + location.search; //跳转到移动端页面
+        }
+    </script>
+</body>
+</html>
+
+
