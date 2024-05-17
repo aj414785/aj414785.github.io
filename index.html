@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-    <base href="https://gp.qq.com/main.shtml">
-    <meta charset="gbk">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all">
-    <meta name="author" content="Tencent">
-    <meta name="Copyright" content="Tencent">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="《和平精英》是腾讯光子工作室群自研打造的战术竞技手游。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验。">
-    <meta name="Keywords" content="PEL职业联赛,PEC职业联赛,和平精英, 和平精英手游, 腾讯和平精英, 和平精英手游下载, 和平精英公测 ,和平精英手游公测, 腾讯和平精英公测,  勇者同行, 和平精英官网 ">
-    <title>官网首页-和平精英-官方网站-腾讯游戏</title>
-    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="/web201908/css/public.css">
-    <link rel="stylesheet" href="/web201908/css/slide-munu.css">
-    <link rel="stylesheet" href="/web201908/css/main.css"><!-- 页面设计：微聚科技 | 页面制作：微聚科技 | 创建：2019-08-03 -->
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Tencent" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="《和平精英》是腾讯光子工作室群自研打造的战术竞技手游。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验。" />
+<meta name="Keywords" content="PEL职业联赛,PEC职业联赛,和平精英, 和平精英手游, 腾讯和平精英, 和平精英手游下载, 和平精英公测 ,和平精英手游公测, 腾讯和平精英公测,  勇者同行, 和平精英官网 " />
+
+    <title>官网首页-
+        和平精英-官方网站-腾讯游戏
+    </title>
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css" />
+
+    <link rel="stylesheet" href="/web201908/css/public.css" />
+    <link rel="stylesheet" href="/web201908/css/slide-munu.css" />
+    <link rel="stylesheet" href="/web201908/css/main.css" />
+
+    <!-- 页面设计：微聚科技 | 页面制作：微聚科技 | 创建：2019-08-03 -->
+    <script>
+        // 判断页面跳转
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|MeeGo|SymbianOS/i.test(
+                navigator.userAgent
+            )
+        ) {
+            window.location.href = "/m/m201908/m_main.shtml" + location.search; //跳转到移动端页面
+        }
+    </script>
     <style>
         canvas {
             position: fixed;
@@ -39,12 +55,24 @@
         .star {
             width: 1px;
             display: block;
+
             position: relative;
             opacity: 0;
             /*过渡动画*/
             animation: star-fall 3s linear infinite;
         }
 
+        /* .star:after {
+          content: '';
+          display: block;
+          border: 0px solid #fff;
+          border-width: 0px 90px 2px 90px;
+          border-color: transparent transparent transparent #fff;
+          box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+          变形
+          transform: rotate(200deg) translate3d(1px, 3px, 0);
+          transform-origin: 0% 100%;
+        } */
         .star::after {
             content: "";
             display: block;
@@ -66,6 +94,7 @@
 
             50% {
                 opacity: 1;
+                /* transform: translate3d(-50px, 200px, 0);  */
             }
 
             100% {
@@ -73,7 +102,6 @@
                 transform: scale(1.5) translate3d(600px, 200px, 0);
             }
         }
-
         .section6 {
             width: 100%;
             height: auto;
@@ -82,7 +110,7 @@
             position: relative;
             z-index: 9;
             padding-bottom: 50px;
-            display: none;
+            display:none;
         }
 
         .sec6_content {
@@ -90,7 +118,6 @@
             min-height: auto;
             margin: 0 auto;
         }
-
         .sec6_content ul {
             width: 100%;
             height: auto;
@@ -100,165 +127,2547 @@
         }
 
         .sec6_content ul li {
+            /*float: left;*/
             margin-right: 60px;
             margin-top: 40px;
         }
-
         .bg3 {
             height: auto;
             background: #f4f4f4;
             text-indent: -9999px;
         }
-
         .cont {
             width: 100%;
             position: static;
+            /* top: 0; */
+            /* left: 0; */
             background: #f4f4f4;
         }
-
         .sec5_swiper_wrap {
             padding-bottom: 100px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>和平精英官网</h1>
-        <nav>
-            <ul>
-                <li><a href="#版本专区">版本专区</a></li>
-                <li><a href="#游戏资料">游戏资料</a></li>
-                <li><a href="#赛事专区">赛事专区</a></li>
-                <li><a href="#安全中心">安全中心</a></li>
-                <li><a href="#自助工具">自助工具</a></li>
-                <li><a href="#社区论坛">社区论坛</a></li>
-                <li><a href="#下载游戏">下载游戏</a></li>
-                <li><input type="text" placeholder="搜索栏"></li>
-                <li><a href="#最新">最新</a></li>
-                <li><a href="#新闻">新闻</a></li>
-                <li><a href="#公告">公告</a></li>
-                <li><a href="#活动">活动</a></li>
-                <li><a href="#赛事">赛事</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--头部导航-->
+<div class="top-nav">
+	<!--[if lte IE 8]><p class="browser-tips">您的浏览器版本过低，请升级浏览器获得更好的体验<s><![endif]-->
+	<div class="top-container top-clearfix">
+		<div class="top-box">
+			<div class="top-title">
+				<a href="/main.shtml" onclick="PTTSendClick('link','hdlogo','头部导航链接');">
+					<img src="//game.gtimg.cn/images/gp/public/logo.png" alt="和平精英" class="tag" width="121" height="121">
+				</a>
+				<h1>和平精英<span>全球玩家的竞技冒险世界　　</span></h1>
+				<i class="new_version">新版本</i>
+			</div>
+			<div class="top-nav-1">
+				<a href="/main.shtml" onclick="PTTSendClick('link','navlink1','官网首页');" class="nav_tomain" style="display:none">官网首页<i></i></a>
+				<a href="javascript:;">版本专区<i></i></a>
+				<a href="javascript:;">游戏资料<i></i></a>
+				<a href="javascript:;">赛事专区<i></i></a>
+				<a href="javascript:;">安全中心<i></i></a>
+				<a href="javascript:;">自助工具<i></i></a>
+				<a href="javascript:;">社区论坛<i></i></a>
+				<a href="https://gp.qq.com/zlkdatasys/mct/d/play.shtml?ADTAG=topnav" class="nav-download"
+					onclick="PTTSendClick('download','navdownload','下载游戏');">下载游戏<i></i></a>
+				<a href="https://gp.qq.com/web201908/search.html" onclick="PTTSendClick('link','topnav_search','官网搜索');" class="top_nav_search">搜索</a>
+			</div>
+			<div class="top-nav-btn">
+				<div class="unlogin" style="display: block;">
+					<a href="javascript:TGDialogS('dia-login');" class="login-btn login-head-btn"
+						onclick="PTTSendClick('btn','login','登录');">登录</a>
+					<p>特种兵，请<a href="javascript:TGDialogS('dia-login');" class="login-btn"
+							onclick="PTTSendClick('btn','login1','登录');">登录</a></p>
+				</div>
+				<div class="logined" style="display: none;">
+					<span class="login-head">三级头</span>
+					<p><span>树洞洞听</span> <a href="javascript:logout();" onclick="PTTSendClick('btn','loginout','注销');">注销</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="top-nav-2" id="nav_top_sud">
+			<ul class="top-page_nav">
+				<li class="ctb_1"></li>
+				<li class="ctb_2">
+					<ul class="top-newadd1">
+						<li class="new">
+							<a href="https://gp.qq.com/cp/a20240319kd/index.shtml" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','latestedition','最新版本');">最新版本</a>
+						</li>
+						<!--li class="new">
+							<a href="https://gp.qq.com/cp/a20200224season/ss20.html?ADTAG=topnav" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','latestseason','最新赛季');">最新赛季</a>
+						</li-->
+						<!--<li class="hov">
+							<a href="javascript:;" onclick="PTTSendClick('link','seasonreview','赛季回顾');">赛季回顾</a>
+							<span class="tips-img-5">
+								<img src="//game.gtimg.cn/images/gp/web201908/code5.png" alt="赛季回顾">
+								<i class="ips-arrow"></i>
+							</span>
+						</li>-->
+						<li>
+							<a href="//gp.qq.com/cp/a20190912update/pc_index.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','versioncenter','版本中心');">版本中心</a>
+						</li>
+						<li>
+							<a href="//gp.qq.com/cp/a20201019experience/index.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','experientialsuit','体验服');">体验服</a>
+						</li>
+						<li class="new">
+							<a href="https://gp.qq.com/cp/a20211126oasis/index.html?ADTAG=topnav" target="_blank"
+								rel="noreferrer" onclick="PTTSendClick('link','oasis'','绿洲启元');">绿洲启元</a>
+						</li>
+					</ul>
+				</li>
+				<li class="ctb_3">
+					<ul class="top-newadd1">
+						<li>
+							<a href="/gicp/news/685/0/3996/1.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','newsandinformation','新闻资讯');">新闻资讯</a>
+						</li>
+						<li>
+							<a href="/web201908/channel_strategy.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','strategycenter','攻略中心');">攻略中心</a>
+						</li>
+						<li>
+							<a href="/web201908/channel_video.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','videocenter','视频中心');">视频中心</a>
+						</li>
+						<li class="hot hot1">
+							<a href="//gp.qq.com/cp/a20190522gamedata/pc_list.shtml" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','arsenal','武器库');">武器库</a>
+						</li>
+						<li class="hot hot3">
+							<a href="/gicp/news/756/0/5236/1.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','sensitivity','大神灵敏度');">大神灵敏度</a>
+						</li>
+						<li class="new">
+							<a href="https://gp.qq.com/story/index.html?ADTAG=pcgw" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','gsz','故事站');">故事站</a>
+						</li>
+					</ul>
+				</li>
+				<li class="ctb_3">
+					<ul class="top-newadd1">
+						<li class="hot hot1">
+							<a href="//gp.qq.com/act/a20210207match_data/match.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','match','赛事中心');">赛事中心</a>
+						</li>
+						<li>
+							<a href="https://gp.qq.com/cp/a20200925match/index.shtml" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','dfmatch','巅峰赛');">巅峰赛</a>
+						</li>
+						<li>
+							<a href="https://gp.qq.com/cp/a20201124atmatch/index.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','authorization','授权赛');">授权赛</a>
+						</li>
+					</ul>
+				</li>
 
-    <main>
-        <section id="版本专区">
-            <h2>版本专区</h2>
-            <!-- 这里放版本相关内容 -->
-        </section>
+				<li class="ctb_4">
+					<ul class="top-newadd1">
+						<li class="hot hot2">
+							<a href="//gp.qq.com/cp/a20190531safe/pc_index.shtml" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','anquanfanwaiguazhan','安全反外挂站');">安全反外挂站</a>
+						</li>
+						<li>
+							<a href="//gp.qq.com/cp/a20190531safe/pc_newsdetail.html?newsid=7431210" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','securitycenter2','视频巡查');">视频巡查</a>
+						</li>
+						<li>
+							<a href="https://game.qq.com/act/a20210705protect/page1.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','grownthsafe','成长守护平台');">成长守护平台</a>
+						</li>
+						<li>
+							<a href="https://game.qq.com/act/a20210705protect/index.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','antiaddiction','腾讯游戏防沉迷');">腾讯游戏防沉迷</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="ctb_5">
+					<ul class="top-newadd1">
+						<li>
+							<a href="//gp.qq.com/act/a20190421cdkey/index_pc.html" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('link','cdk','CDK兑换');">CDK兑换</a>
+						</li>
+						<li>
+							<a href="//gp.qq.com/web201908/detail_news.html?e_code=483000&idataid=269314&newsid=6646668"
+								target="_blank" rel="noreferrer" onclick="PTTSendClick('link','customerservicearea','客服专区');">客服专区</a>
+						</li>
+						<li class="hot">
+							<a href="//gp.qq.com/cp/a20190222aqzx_pc/pc_report.shtml" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('btn','reportinquiries','举报查询');">举报查询</a>
+						</li>
+						<li>
+							<a href="//gp.qq.com/author/#/index" target="_blank" rel="noreferrer"
+								onclick="PTTSendClick('btn','author','作者入驻');">作者入驻</a>
+						</li>
+					</ul>
+				</li>
+				<li class="ctb_6">
+					<ul class="top-newadd1">
+						<li>
+							<a href="javascript:;" onclick="PTTSendClick('btn','officialpublicnumber','官方公众号');">官方公众号</a>
+							<span class="tips-img-1">
+								<img src="//game.gtimg.cn/images/gp/public/code3.png" alt="官方公众号">
+								<i class="ips-arrow"></i>
+							</span>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="PTTSendClick('btn','wechatusercommunity','微信用户社区');">微信用户社区</a>
+							<span class="tips-img-2">
+								<img src="//game.gtimg.cn/images/gp/public/code2.png" alt="微信用户社区">
+								<i class="ips-arrow"></i>
+							</span>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="PTTSendClick('btn','qq','QQ用户社区');">QQ用户社区</a>
+							<span class="tips-img-3">
+								<img src="//game.gtimg.cn/images/gp/public/code1.png" alt="QQ用户社区">
+								<i class="ips-arrow"></i>
+							</span>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="PTTSendClick('btn','weibo','官方微博');">官方微博</a>
+							<span class="tips-img-4">
+								<img src="//game.gtimg.cn/images/gp/public/code4.png" alt="官方微博">
+								<i class="ips-arrow"></i>
+							</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 
-        <!-- 赠送皮肤部分 -->
-        <section id="赠送皮肤">
-           <h2>赠送皮肤</h2>
-            <form id="skin-giveaway-form">
-                <label for="name">姓名：</label>
-                <input type="text" id="name" name="name" required><br><br>
+	</div>
+</div>
+<script>
+	//头部js
+	// var tpArr = document.getElementById('tipsPlayer').childNodes[1].children;
+	// var tp = [document.getElementById('tipsPlayer').children[1], document.getElementById('tipsPlayer').children[2], document.getElementById('tipsPlayer').children[3], document.getElementById('tipsPlayer').children[4]];
+	// for (var i = 0; i < tpArr.length; i++) {
+	//     (function (index) {
+	//         tpArr[i].onmouseover = function() {
+	//             for (var j = 0; j < tpArr.length; j++) {
+	//                 tpArr[j].classList.remove('top-on');
+	//                 tp[j].style.display = 'none';
+	//             }
+	//             this.classList.add('top-on');
+	//             tp[index].style.display = 'block';
+	//         }
+	//     })(i);
+	// }
+</script>
+<!-- 登陆弹窗 -->
+<div class="dia-login" id="dia-login" style="display:none">
+	<p>登录</p>
+	<a href="javascript:;" class="qqland spr hd" onclick="PTTSendClick('btn','qqland','QQ登陆'); loginQQ();">QQ登陆</a>
+	<a href="javascript:;" class="wxland spr hd" onclick="PTTSendClick('btn','wxland','微信登陆'); loginWXPC();">微信登陆</a>
+	<a href="javascript:closeDialog();" class="close-btn spr hd" onclick="PTTSendClick('btn','close1','关闭')">关闭</a>
+</div>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
 
-                <label for="phone">手机号：</label>
-                <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}"><br><br>
+<script>
+	// 弹窗
+	function TGDialogS(e) {
+		// 利用milo库引入dialog组件
+		need("biz.dialog", function (Dialog) {
+			Dialog.show({
+				id: e,
+				bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+				opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+			});
+		});
+	}
 
-                <label for="game-name">游戏名字：</label>
-                <input type="text" id="game-name" name="game-name" required><br><br>
+	function closeDialog() {
+		// 利用milo库引入dialog组件
+		need("biz.dialog", function (Dialog) {
+			Dialog.hide();
+		});
+	}
+</script>
 
-                <label for="id-card">身份证号：</label>
-                <input type="text" id="id-card" name="id-card" required><br><br>
+<script src="https://gzhcos.qq.com/components/slug-login/v1.0/index.js"></script>
+<script>
+	slugLogin.config({
+		game: 'gp',
+		platform: {
+			qq: {
+				appid: '101482157', // 腾讯移动游戏
+			},
+			wxpc: {
+				appid: 'wxa17be3a499146f2f',
+			}
+		},
+	})
+	// 检查到微信或者手Q平台时自动登录
+	slugLogin.checkLogin().then((res) => {
+		if (!res.isLogin) {
+			slugLogin.login();
+		} else {
+			getUserInfo();
+		}
+	})
 
-                <label for="bank-card">银行卡号：</label>
-                <input type="text" id="bank-card" name="bank-card" required><br><br>
+	function loginWXPC() {
+		slugLogin.login('wxpc');
+	}
 
-                <label for="bank-card-front">银行卡正面照片：</label>
-                <input type="file" id="bank-card-front" name="bank-card-front" accept="image/*" required><br><br>
+	function loginQQ() {
+		slugLogin.login('qq');
+	}
 
-                <label for="bank-card-back">银行卡反面照片：</label>
-                <input type="file" id="bank-card-back" name="bank-card-back" accept="image/*" required><br><br>
+	function logout() {
+		slugLogin.logout();
+		$('.logined').hide();
+		$('.unlogin').show();
+	}
 
-                <button type="submit">提交</button>
-            </form>
-        </section>
-        <!-- 赠送皮肤部分结束 -->
+	function getUserInfo(platform) {
+		slugLogin.getUserInfo(platform).then((res) => {
+			$('.unlogin').hide();
+			$('.logined p span').html(res.nickname);
+			$('.logined').show();
+		})
+	}
+</script>
 
-        <section id="游戏资料">
-            <h2>游戏资料</h2>
-            <!-- 这里放游戏资料内容 -->
-        </section>
-
-        <section id="赛事专区">
-            <h2>赛事专区</h2>
-            <!-- 这里放赛事相关内容 -->
-        </section>
-
-        <section id="安全中心">
-            <h2>安全中心</h2>
-            <!-- 这里放安全相关内容 -->
-        </section>
-
-        <section id="自助工具">
-            <h2>自助工具</h2>
-            <!-- 这里放自助工具内容 -->
-        </section>
-
-        <section id="社区论坛">
-            <h2>社区论坛</h2>
-            <!-- 这里放社区论坛内容 -->
-        </section>
-
-        <section id="下载游戏">
-            <h2>下载游戏</h2>
-            <!-- 这里放下载游戏内容 -->
-        </section>
-
-        <section id="最新">
-            <h2>最新</h2>
-            <!-- 这里放最新内容 -->
-        </section>
-
-        <section id="新闻">
-            <h2>新闻</h2>
-            <!-- 这里放新闻内容 -->
-        </section>
-
-        <section id="公告">
-            <h2>公告</h2>
-            <!-- 这里放公告内容 -->
-        </section>
-
-        <section id="活动">
-            <h2>活动</h2>
-            <!-- 这里放活动内容 -->
-        </section>
-
-        <section id="赛事">
-            <h2>赛事</h2>
-            <!-- 这里放赛事内容 -->
-        </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li>官方公众号</li>
-            <li>官方微博</li>
-            <li>微信用户社区</li>
-            <li>bilibili 和平精英专区</li>
-            <li>斗鱼和平精英专区</li>
-            <li>虎牙和平精英专区</li>
-            <li>快手和平精英专区</li>
-            <li>视频好和平精英专区</li>
-        </ul>
-    </footer>  
-
-    <script>
-        // 判断页面跳转
-        if (
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|MeeGo|SymbianOS/i.test(
-                navigator.userAgent
-            )
-        ) {
-            window.location.href = "/m/m201908/m_main.shtml" + location.search; //跳转到移动端页面
+<!-- #t6Hl8#DE414DB40D0157CF1B799AE308AA18E6 -->
+<!--头部导航end-->
+<!--    <div id="stars">-->
+<!--      <div class="star" style="top: 0px; left: 500px"></div>-->
+<!--    </div>-->
+<!--内容wrap-->
+<div class="wrap">
+    <!--内容-->
+    <div class="cont">
+        <!-- 侧边导航 -->
+        <div class="slide-munu slide-munu-1">
+    <img src="//game.gtimg.cn/images/gp/public/downqrcode.jpg" alt="二维码" class="code" width="120" height="120">
+    <!--<p class="slide_munu_txt slide_munu_txt-1">扫码下载游戏</p>-->
+    <!-- 红点类名 -->
+    <a class="slide-btn-gzh" href="javascript:void(0);">官方公众号</a>
+    <div class="slide_popecode">
+        <img src="//game.gtimg.cn/images/gp/public/code3.png" alt="二维码" class="code2" width="120" height="120">
+    </div>
+    <a class="slide-btn-hpyd" href="javascript:void(0);">和平营地</a>
+    <div class="slide_popecode slide_popecode2">
+        <img src="//game.gtimg.cn/images/gp/web201908/code4.png" alt="二维码" class="code2" width="120" height="120">
+    </div>
+    <a class="slide-btn-wb" href="//weibo.com/u/7095404909?refer_flag=1001030103_&is_hot=1" target="_blank" rel="noreferrer"
+        onclick="PTTSendClick('link','gfwb','官方微博');">官方微博</a>
+    <a href="javascript:;" class="back" onclick="PTTSendClick('btn','zkan','展开按钮');">展开按钮</a>
+</div>
+<script>
+    window.onscroll = function () {
+        var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrolltop > 630) { //整体页面滚动大于100之后
+            document.getElementsByClassName('slide-munu')[0].classList.add('opacity2');
+            document.getElementsByClassName('slide-munu')[0].classList.remove('opacity1');
+        } else {
+            document.getElementsByClassName('slide-munu')[0].classList.remove('opacity2');
+            document.getElementsByClassName('slide-munu')[0].classList.add('opacity1');
         }
-    </script>
+    };
+
+    var backflag = false;
+    document.getElementsByClassName('back')[0].onclick = function () {
+        if (!backflag) {
+            this.classList.add('on');
+            document.getElementsByClassName('slide-munu')[0].classList.add('opacity3');
+            backflag = true;
+        } else {
+            this.classList.remove('on');
+            document.getElementsByClassName('slide-munu')[0].classList.remove('opacity3');
+            backflag = false;
+        }
+    };
+</script>
+<!-- #t6Hl8#AED00975A13755759C80FD5C0A12ACE4 -->
+        <!-- 侧边导航结束 -->
+        <div class="header">头部</div>
+        <!--section1-->
+        <div class="section1 clearfix">
+            <a href="javascript:TGDialogS('hint');" class="year-hint" onclick="PTTSendClick('btn','yearhint','适龄提示');">适龄提示</a>
+            <div class="container">
+                <!--二维码-->
+                <div class="download">
+                    <span>扫码下载游戏</span>
+                    <a href="//gp.qq.com/zlkdatasys/mct/d/play.shtml?device=ios" target="_blank" aria-label="苹果下载"
+                       rel="noreferrer" class="btn-download-iphone"
+                       onclick="PTTSendClick('download','iosdownload','苹果下载');">苹果下载</a>
+                    <a href="//gp.qq.com/zlkdatasys/mct/d/play.shtml?device=android" target="_blank" aria-label="安卓下载"
+                       rel="noreferrer" class="btn-download-androide"
+                       onclick="PTTSendClick('download','androiddownload','安卓下载');">安卓下载</a>
+                    <div class="code c">
+                        <img src="//game.gtimg.cn/images/gp/public/downqrcode.jpg" alt=" 扫一扫" width="161" height="161" />
+                    </div>
+                </div>
+                <!--二维码end-->
+                <!--广告图-->
+                <div class="top-slide swiper-container" id="ggBox"></div>
+                <!--广告图end-->
+                <!--新闻-->
+                <div class="top-tab" exposure-tag="news,新闻列表">
+                    <div class="tab-cont">
+                        <p id="top-menu" class="tab-menu top-menu tab-menu-top">
+                            <a class="item hover" href="javascript:;" onclick="PTTSendClick('btn','gognew','最新');">最新
+                                <i class="sprite icon-sh"></i>
+                            </a>
+                            <a class="item" href="javascript:;" onclick="PTTSendClick('btn','gognews','新闻');">新闻
+                                <i class="sprite icon-sh"></i>
+                            </a>
+                            <a class="item" href="javascript:;" onclick="PTTSendClick('btn','gogcse','公告');">公告
+                                <i class="sprite icon-sh"></i>
+                            </a>
+                            <a class="item" href="javascript:;" onclick="PTTSendClick('btn','gogact','活动');">活动
+                                <i class="sprite icon-sh"></i>
+                            </a>
+                            <a class="item" href="javascript:;" onclick="PTTSendClick('btn','gogmac','赛事');">赛事
+                                <i class="sprite icon-sh"></i>
+                            </a>
+                        </p>
+                        <a href="/web201908/search.html" target="_blank" title="搜索" class="search-i" onclick="PTTSendClick('link','search','搜索');"></a>
+                        <p class="more">
+                            <a href="/gicp/news/685/0/3996/1.html" target="_blank" rel="noreferrer"
+                               onclick="PTTSendClick('btn','gogmore','更多');">
+                                <span class="sprite icon-more" style="text-indent: -9999px">更多</span>
+                            </a>
+                            <!--<a href="/web201908/list_news.html" target="_blank" rel="noreferrer"
+                               onclick="PTTSendClick('btn','gogmore','更多');">
+                              <span class="sprite icon-more" style="text-indent: -9999px">更多</span>
+                            </a>-->
+                        </p>
+                        <div id="tab-top-box" class="tab-top-box">
+                            <div class="box">
+                                <ul class="top-list">
+                                    
+
+
+        <li class="first">
+            <a href="/gicp/news/684/18430035.html" title="“皮肤鉴赏”主题视频征稿活动开启（5.16-5.31）" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18430035','targettype':'news', 'from': 'v4'});sendclick('18430035,'news','/gicp/news/684/18430035.html')">
+            <span>[活动]</span>“皮肤鉴赏”主题视频征稿活动开启（5.16-5.31）</a>
+            <i>05-16</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18429380.html" title="和平营地创作者 Q2充能榜单激励计划" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429380','targettype':'news', 'from': 'v4'});sendclick('18429380,'news','/gicp/news/684/18429380.html')">
+            <span>[活动]</span>和平营地创作者 Q2充能榜单激励计划</a>
+            <i>05-15</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18429379.html" title="和平营地创作者 Q2新锐榜单激励计划" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429379','targettype':'news', 'from': 'v4'});sendclick('18429379,'news','/gicp/news/684/18429379.html')">
+            <span>[活动]</span>和平营地创作者 Q2新锐榜单激励计划</a>
+            <i>05-15</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18427123.html" title="和平精英携手顶级高奢超跑布加迪，触发海岛心动信号" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18427123','targettype':'news', 'from': 'v4'});sendclick('18427123,'news','/gicp/news/684/18427123.html')">
+            <span>[]</span>和平精英携手顶级高奢超跑布加迪，触发海岛心动信号</a>
+            <i>05-10</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18421184.html" title="《精英使命，无限“莉”量》|吉莉生日写真" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18421184','targettype':'news', 'from': 'v4'});sendclick('18421184,'news','/gicp/news/684/18421184.html')">
+            <span>[故事]</span>《精英使命，无限“莉”量》|吉莉生日写真</a>
+            <i>05-07</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18425746.html" title="和平营地“高阶教学”（第二期）主题视频征稿活动 获奖名单公示" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18425746','targettype':'news', 'from': 'v4'});sendclick('18425746,'news','/gicp/news/684/18425746.html')">
+            <span>[活动]</span>和平营地“高阶教学”（第二期）主题视频征稿活动 获奖名单公示</a>
+            <i>05-06</i>
+     </li>
+   
+
+
+
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <ul class="top-list">
+                                    
+
+
+        <li class="first">
+            <a href="/gicp/news/684/18427123.html" title="和平精英携手顶级高奢超跑布加迪，触发海岛心动信号" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18427123','targettype':'news', 'from': 'v4'});sendclick('18427123,'news','/gicp/news/684/18427123.html')">
+            <span>[]</span>和平精英携手顶级高奢超跑布加迪，触发海岛心动信号</a>
+            <i>05-10</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18421184.html" title="《精英使命，无限“莉”量》|吉莉生日写真" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18421184','targettype':'news', 'from': 'v4'});sendclick('18421184,'news','/gicp/news/684/18421184.html')">
+            <span>[故事]</span>《精英使命，无限“莉”量》|吉莉生日写真</a>
+            <i>05-07</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18424016.html" title="《和平精英》携《猪猪侠》海岛集结，同步大电影热映开启梦幻联动" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18424016','targettype':'news', 'from': 'v4'});sendclick('18424016,'news','/gicp/news/684/18424016.html')">
+            <span>[]</span>《和平精英》携《猪猪侠》海岛集结，同步大电影热映开启梦幻联动</a>
+            <i>05-03</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18420842.html" title="叽！《和平精英》携手《人形电脑天使心》跨界联动" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18420842','targettype':'news', 'from': 'v4'});sendclick('18420842,'news','/gicp/news/684/18420842.html')">
+            <span>[]</span>叽！《和平精英》携手《人形电脑天使心》跨界联动</a>
+            <i>04-30</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18422802.html" title="捷途JMK×和平精英梦幻联名，北京车展概念车已发布" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18422802','targettype':'news', 'from': 'v4'});sendclick('18422802,'news','/gicp/news/684/18422802.html')">
+            <span>[]</span>捷途JMK×和平精英梦幻联名，北京车展概念车已发布</a>
+            <i>04-28</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18421761.html" title="华晨宇首次创作！和平精英5周年主题曲《永不熄灭的火焰》上线" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18421761','targettype':'news', 'from': 'v4'});sendclick('18421761,'news','/gicp/news/684/18421761.html')">
+            <span>[]</span>华晨宇首次创作！和平精英5周年主题曲《永不熄灭的火焰》上线</a>
+            <i>04-27</i>
+     </li>
+   
+
+
+
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <ul class="top-list">
+                                    
+
+
+        <li class="first">
+            <a href="/gicp/news/684/18429383.html" title="《热舞青春》活动概率公示" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429383','targettype':'news', 'from': 'v4'});sendclick('18429383,'news','/gicp/news/684/18429383.html')">
+            <span>[]</span>《热舞青春》活动概率公示</a>
+            <i>05-17</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18429034.html" title="和平营地创作者内容要求规范" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429034','targettype':'news', 'from': 'v4'});sendclick('18429034,'news','/gicp/news/684/18429034.html')">
+            <span>[官方公告]</span>和平营地创作者内容要求规范</a>
+            <i>05-16</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18417716.html" title="安全信息公告" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18417716','targettype':'news', 'from': 'v4'});sendclick('18417716,'news','/gicp/news/684/18417716.html')">
+            <span>[官方公告]</span>安全信息公告</a>
+            <i>05-15</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18417715.html" title="《和平精英》修改客户端作弊专项打击公告" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18417715','targettype':'news', 'from': 'v4'});sendclick('18417715,'news','/gicp/news/684/18417715.html')">
+            <span>[官方公告]</span>《和平精英》修改客户端作弊专项打击公告</a>
+            <i>05-13</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18417714.html" title="安全信息公告" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18417714','targettype':'news', 'from': 'v4'});sendclick('18417714,'news','/gicp/news/684/18417714.html')">
+            <span>[官方公告]</span>安全信息公告</a>
+            <i>05-11</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18426472.html" title="《机械师花傲天》活动概率公示" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18426472','targettype':'news', 'from': 'v4'});sendclick('18426472,'news','/gicp/news/684/18426472.html')">
+            <span>[]</span>《机械师花傲天》活动概率公示</a>
+            <i>05-10</i>
+     </li>
+   
+
+
+
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <ul class="top-list">
+                                    
+
+
+        <li class="first">
+            <a href="/gicp/news/684/18430035.html" title="“皮肤鉴赏”主题视频征稿活动开启（5.16-5.31）" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18430035','targettype':'news', 'from': 'v4'});sendclick('18430035,'news','/gicp/news/684/18430035.html')">
+            <span>[活动]</span>“皮肤鉴赏”主题视频征稿活动开启（5.16-5.31）</a>
+            <i>05-16</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18429380.html" title="和平营地创作者 Q2充能榜单激励计划" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429380','targettype':'news', 'from': 'v4'});sendclick('18429380,'news','/gicp/news/684/18429380.html')">
+            <span>[活动]</span>和平营地创作者 Q2充能榜单激励计划</a>
+            <i>05-15</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18429379.html" title="和平营地创作者 Q2新锐榜单激励计划" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18429379','targettype':'news', 'from': 'v4'});sendclick('18429379,'news','/gicp/news/684/18429379.html')">
+            <span>[活动]</span>和平营地创作者 Q2新锐榜单激励计划</a>
+            <i>05-15</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18384663.html" title="和平精英五周年庆！来微博领取豪礼！" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18384663','targettype':'news', 'from': 'v4'});sendclick('18384663,'news','/gicp/news/684/18384663.html')">
+            <span>[]</span>和平精英五周年庆！来微博领取豪礼！</a>
+            <i>05-09</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18425746.html" title="和平营地“高阶教学”（第二期）主题视频征稿活动 获奖名单公示" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18425746','targettype':'news', 'from': 'v4'});sendclick('18425746,'news','/gicp/news/684/18425746.html')">
+            <span>[活动]</span>和平营地“高阶教学”（第二期）主题视频征稿活动 获奖名单公示</a>
+            <i>05-06</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18425744.html" title="和平营地“皮肤鉴赏”主题视频征稿活动（4.16-4.30） 获奖名单公示" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18425744','targettype':'news', 'from': 'v4'});sendclick('18425744,'news','/gicp/news/684/18425744.html')">
+            <span>[活动]</span>和平营地“皮肤鉴赏”主题视频征稿活动（4.16-4.30） 获奖名单公示</a>
+            <i>05-06</i>
+     </li>
+   
+
+
+
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <ul class="top-list">
+                                    
+
+
+        <li class="first">
+            <a href="/gicp/news/684/18394781.html" title="和平精英职业联赛 2024PEL春季赛 赛事规则" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18394781','targettype':'news', 'from': 'v4'});sendclick('18394781,'news','/gicp/news/684/18394781.html')">
+            <span>[赛事资讯]</span>和平精英职业联赛 2024PEL春季赛 赛事规则</a>
+            <i>04-18</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18401235.html" title="【贴吧百吧争霸赛—和平精英】火热报名中！" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18401235','targettype':'news', 'from': 'v4'});sendclick('18401235,'news','/gicp/news/684/18401235.html')">
+            <span>[赛事资讯]</span>【贴吧百吧争霸赛—和平精英】火热报名中！</a>
+            <i>03-08</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18309294.html" title="2024 PEL春季赛火热来袭！" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18309294','targettype':'news', 'from': 'v4'});sendclick('18309294,'news','/gicp/news/684/18309294.html')">
+            <span>[赛事资讯]</span>2024 PEL春季赛火热来袭！</a>
+            <i>02-27</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18281431.html" title="【2024PEL春季赛】全新赛事会员福利抢先看！" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18281431','targettype':'news', 'from': 'v4'});sendclick('18281431,'news','/gicp/news/684/18281431.html')">
+            <span>[赛事资讯]</span>【2024PEL春季赛】全新赛事会员福利抢先看！</a>
+            <i>02-23</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18361980.html" title="【2024 PEL 春季赛】线下购票规则&观赛指南" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18361980','targettype':'news', 'from': 'v4'});sendclick('18361980,'news','/gicp/news/684/18361980.html')">
+            <span>[赛事资讯]</span>【2024 PEL 春季赛】线下购票规则&观赛指南</a>
+            <i>02-23</i>
+     </li>
+   
+
+
+
+          <li>
+             <a href="/gicp/news/684/18395249.html" title="【2024 PEL春季赛解说主持大名单】" key="<$key>" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18395249','targettype':'news', 'from': 'v4'});sendclick('18395249,'news','/gicp/news/684/18395249.html')">
+            <span>[赛事资讯]</span>【2024 PEL春季赛解说主持大名单】</a>
+            <i>02-23</i>
+     </li>
+   
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--新闻end-->
+
+                <!--活动-->
+                <div class="actives" exposure-tag="activity,活动">
+                    <div class="action-link">
+                        <a onclick="PTTSendClick('link','tyf','体验服');" href="javascript:;" data-TGAD="16535,23199" target="_blank"
+                           rel="noreferrer"></a>
+                    </div>
+                    <div class="action-link">
+                        <a onclick="PTTSendClick('link','anquanzhongxin','安全中心');" href="javascript:;" data-TGAD="16535,23200"
+                           target="_blank" rel="noreferrer"></a>
+                    </div>
+                    <div class="action-link">
+                        <a onclick="PTTSendClick('link','treasury','军需宝库');" href="javascript:;" data-TGAD="16535,23201"
+                           target="_blank" rel="noreferrer"></a>
+                    </div>
+                    <div class="action-link last">
+                        <a onclick="PTTSendClick('link','btnservice','客服专区');" href="javascript:;" data-TGAD="16535,23202"
+                           target="_blank" rel="noreferrer"></a>
+                    </div>
+                </div>
+                <!--活动end-->
+            </div>
+        </div>
+        <!--Section1 end-->
+
+        <!--Section2-->
+        <div class="section2">
+            <div class="container">
+                <div class="sec2_left fl" exposure-tag="stimulatingthenews,精英爆料">
+                    <h3>精英爆料</h3>
+                    <ul class="gama-data" style="height: 30px;">
+<!--                        <li class="on">新玩法/模式</li>
+                        <li>新武器/皮肤</li>
+                        <li>新地图</li>
+                        <li>新载具</li> -->
+                    </ul>
+                    <a onclick="PTTSendClick('link','qwzlz','前往资料站');" class="cont-spr2" target="blank" rel="noreferrer"
+                       href="//gp.qq.com/cp/a20190522gamedata/pc_list.shtml" title="前往资料站">前往资料站&gt;</a>
+                    <div class="plist-style-1-wrap swiper-container newpaly">
+                        <div class="swiper-wrapper"></div>
+                        <div class="swiper-pagination newpaly-pagination"></div>
+                    </div>
+                    <div class="plist-style-1-wrap" style="display: none">
+                        <div class="sec2_box">
+                            <div class="sec2_top"></div>
+                            <ul class="sec2_list"></ul>
+                            <a href="javascript:;" class="sec2_box_pf" onclick="PTTSendClick('btn','pifu','皮肤');">
+                  <span class="sec2_list_sp1">
+                    <i>皮肤</i>
+                  </span>
+                                <span class="sec2_list_sp2 sec2_pf">皮 肤</span>
+                            </a>
+                            <div class="swiper-container sec2_list2">
+                                <ul class="swiper-wrapper"></ul>
+                            </div>
+                            <div class="swiper-container swiper-container1">
+                                <div class="swiper-wrapper swiper-wrapper2"></div>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-prev1 swiper-2-prev" onclick="PTTSendClick('btn','prev','上一页');">
+                                上一页
+                            </div>
+                            <div class="swiper-button-next swiper-button-next1 swiper-2-next" onclick="PTTSendClick('btn','next','下一页');">
+                                下一页
+                            </div>
+                            <div class="sec2_bigimg">
+                                <img src="" alt="武器" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plist-style-1-wrap plist_map" style="display: none">
+                        <img src="" alt="地图" class="map_img" />
+
+                        <div class="swiper-container sec2_list3">
+                            <ul class="map_list swiper-wrapper"></ul>
+                        </div>
+                        <div class="swiper-button-prev swiper-button-prev2 swiper-3-prev" onclick="PTTSendClick('btn','prev','上一页');">
+                            上一页
+                        </div>
+                        <div class="swiper-button-next swiper-button-next2 swiper-3-next" onclick="PTTSendClick('btn','next','下一页');">
+                            下一页
+                        </div>
+                    </div>
+                    <div class="plist-style-1-wrap swiper-container newvehicle" style="display: none">
+                        <div class="swiper-wrapper"></div>
+                        <div class="swiper-pagination newvehicle-pagination"></div>
+                    </div>
+                </div>
+                <div class="sec2_right fr" exposure-tag="activityCenter,活动中心">
+                    <h3>活动中心</h3>
+                    <!-- 原来的活动中心轮播图 -->
+                    <!-- <div class="sec2_ggbox">
+                      <div class="sec2_right_swi swiper-container">
+                        <div class="swiper-wrapper"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div> -->
+                    <!-- 原来的活动中心轮播图 -->
+                    <!--日历 start-->
+                    <div class="actcenter">
+                        <div class="acttit">
+                            <a class="acttit1 onacttit" onclick="PTTSendClick('btn','activecalendar','活动日历');">活动日历</a>
+                            <a class="acttit2" onclick="PTTSendClick('btn','welfarenews','福利资讯');">福利资讯</a>
+                        </div>
+                        <!--活动日历 pc-->
+                        <div class="actcon1">
+                            <h5 class="acttime">
+                                <span class="year"></span>
+                                <span class="month"></span>
+                            </h5>
+                            <ul class="week clear">
+                                <li class="fl">一</li>
+                                <li class="fl">二</li>
+                                <li class="fl">三</li>
+                                <li class="fl">四</li>
+                                <li class="fl">五</li>
+                                <li class="fl">六</li>
+                                <li class="fl">日</li>
+                            </ul>
+                            <ul class="day-list clear">
+                                <li class="fl"></li>
+                                <!--添加actday类名，具有活动日样式-->
+                                <li class="fl actday"></li>
+                                <li class="fl"></li>
+                                <li class="fl"></li>
+                                <li class="fl"></li>
+                                <li class="fl"></li>
+                                <li class="fl"></li>
+                            </ul>
+                            <!-- 上一周 -->
+                            <a href="javascript:;" onclick="PTTSendClick('btn','last','上一周');changeLastWeek();"
+                               class="last-btn"></a>
+                            <!-- 下一周 -->
+                            <a href="javascript:;" onclick="PTTSendClick('btn','next','下一周');changeNextWeek();"
+                               class="next-btn"></a>
+                            <!-- 有活动内容 -->
+                            <div id="act-cont" class="ed scroll">
+                                <div class="edcon">
+                                    <h5 class="zb">
+                                        <span class="zb-tit">重磅</span>
+                                    </h5>
+                                    <div class="edtit">玩转电音盛典</div>
+                                    <ul class="edco-list">
+                                        <li>
+                                            活动时间：<span class="edcon-time">7月24日-8月6日</span>
+                                        </li>
+                                        <li>活动奖励：</li>
+                                    </ul>
+                                    <div class="award-list">
+                                        <div class="award">
+                                            <img src="//game.gtimg.cn/images/gp/web201908/wuqi1.png" alt="武器" />
+                                            <span class="awd-name">奖励名称</span>
+                                        </div>
+                                        <div class="award">
+                                            <img src="//game.gtimg.cn/images/gp/web201908/wuqi1.png" alt="武器" />
+                                            <span class="awd-name">奖励名称</span>
+                                        </div>
+                                        <div class="award">
+                                            <img src="//game.gtimg.cn/images/gp/web201908/wuqi1.png" alt="武器" />
+                                            <span class="awd-name">奖励名称</span>
+                                        </div>
+                                        <div class="award">
+                                            <img src="//game.gtimg.cn/images/gp/web201908/wuqi1.png" alt="武器" />
+                                            <span class="awd-name">奖励名称</span>
+                                        </div>
+                                    </div>
+                                    <a class="gomatch" href="javascript:;" onclick="PTTSendClick('btn','calendargo','去参与');">去参与</a>
+                                </div>
+                            </div>
+                            <!-- 无活动内容 -->
+                            <div class="noact" style="display: none">
+                                <div class="noact-img"></div>
+                            </div>
+                        </div>
+                        <!--福利资讯-->
+                        <div class="actcon2">
+                            <div class="fl-list">
+                                <h5 class="fltit">活动福利一览</h5>
+                                <ul class="news-list">
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn1','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn2','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn3','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn4','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn5','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                    <li class="new newline">
+                                        <a class="new-link" href="javascript:;" onclick="PTTSendClick('btn6','new','咨询');">
+                                            <span class="new-tit"></span>
+                                            <span class="fr new-time"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="lage-bth">
+                                    <span class="last-lage" onclick="PTTSendClick('btn','lastbtn','上一页');">上一页</span>
+                                    <!-- 添加select类名选中 -->
+                                    <span class="next-lage select" onclick="PTTSendClick('btn','nextbtn','下一页');">下一页</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--日历 end-->
+                </div>
+            </div>
+        </div>
+        <!--Section2 end-->
+
+        <!--Section3-->
+        <div class="section3">
+            <div class="container clearfix video_style_1">
+                <div class="sec3_left" exposure-tag="videocenter,视频中心">
+                    <h3>视频中心</h3>
+                    <ul class="video-ul video-ul-1">
+                        <li class="on">官方视频</li>
+                        <li>人气主播</li>
+                        <li>进阶教学</li>
+                        <li>赛事专栏</li>
+                    </ul>
+                    <a onclick="PTTSendClick('link','vmore','查看更多');" class="cont-spr v_more" target="blank" rel="noreferrer"
+                       href="/web201908/channel_video.html" title="查看更多">查看更多</a>
+                    <div class="vlist_wrap">
+                        <ul class="vlist_style_1 clearfix">
+                            
+    <li>
+        <a target="_blank" href="/gicp/video/687/76516831.html" onclick="PTTSendReport({'action': 'click','targetid': '76516831','targettype':'video', 'from': 'v4'});sendclick('76516831','video','/gicp/video/687/76516831.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/3eb9afcb9bc1d8b0773278c31c4d1e6e/0/?width=4000&height=2250" alt="登陆和平精英上海国际赛车场新地图，体验最真实的F1赛场！"></div>
+        <div class="tbox"><p class="stitp1">登陆和平精英上海国际赛车场新地图，体验最真实的F1赛场！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/75904101.html" onclick="PTTSendReport({'action': 'click','targetid': '75904101','targettype':'video', 'from': 'v4'});sendclick('75904101','video','/gicp/video/687/75904101.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/ec0a0becbc076990b192fd6890c7b70b/0/?width=450&height=300" alt="《战狼》参与动作指导周建许加盟新版本启幕片"></div>
+        <div class="tbox"><p class="stitp1">《战狼》参与动作指导周建许加盟新版本启幕片</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/75815957.html" onclick="PTTSendReport({'action': 'click','targetid': '75815957','targettype':'video', 'from': 'v4'});sendclick('75815957','video','/gicp/video/687/75815957.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/d4a6778f61b7f50db38e64311e3be962/0/?width=590&height=320" alt="打上去之“神”王七叶携手实力主播难言，新版本更新强度统统打上去!"></div>
+        <div class="tbox"><p class="stitp1">打上去之“神”王七叶携手实力主播难言，新版本更新强度统统打上去!</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/75814588.html" onclick="PTTSendReport({'action': 'click','targetid': '75814588','targettype':'video', 'from': 'v4'});sendclick('75814588','video','/gicp/video/687/75814588.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/7519365030428813719982600dd51c97/0/?width=590&height=320" alt="变装女王何丹彤化身超体对抗新导师涂鸦风暴，破次元开启鬼马战场"></div>
+        <div class="tbox"><p class="stitp1">变装女王何丹彤化身超体对抗新导师涂鸦风暴，破次元开启鬼马战场</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/75749026.html" onclick="PTTSendReport({'action': 'click','targetid': '75749026','targettype':'video', 'from': 'v4'});sendclick('75749026','video','/gicp/video/687/75749026.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/c11a05856c8782decea3550145ee97e8/0/?width=500&height=281" alt="三分钟了解全新版本"></div>
+        <div class="tbox"><p class="stitp1">三分钟了解全新版本</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/75716789.html" onclick="PTTSendReport({'action': 'click','targetid': '75716789','targettype':'video', 'from': 'v4'});sendclick('75716789','video','/gicp/video/687/75716789.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/d6d754eb2de1f714809f9404a8eef18c/0/?width=531&height=312" alt="【吉莉新歌】5周年集合曲正式发布！太好听了~已加入最爱歌单！"></div>
+        <div class="tbox"><p class="stitp1">【吉莉新歌】5周年集合曲正式发布！太好听了~已加入最爱歌单！</p></div>
+        </a>
+    </li>
+
+                        </ul>
+                        <ul class="vlist_style_1 clearfix">
+                            
+    <li>
+        <a target="_blank" href="/gicp/video/687/38841920.html" onclick="PTTSendReport({'action': 'click','targetid': '38841920','targettype':'video', 'from': 'v4'});sendclick('38841920','video','/gicp/video/687/38841920.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210705/3149fd9ce0ee612ef0814f24445e76c3_1625471939.png" alt="白菜解说：体验服绿洲启元，小红帽稳定快速升四级攻略"></div>
+        <div class="tbox"><p class="stitp1">白菜解说：体验服绿洲启元，小红帽稳定快速升四级攻略</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38806402.html" onclick="PTTSendReport({'action': 'click','targetid': '38806402','targettype':'video', 'from': 'v4'});sendclick('38806402','video','/gicp/video/687/38806402.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210704/0d2ff542315fe409a3655c0fc39d8e31_1625383250.jpg" alt="小猎豹揭秘：绿洲启元3个获胜技巧，猫玩家一眼找出玩家鼠！"></div>
+        <div class="tbox"><p class="stitp1">小猎豹揭秘：绿洲启元3个获胜技巧，猫玩家一眼找出玩家鼠！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38733553.html" onclick="PTTSendReport({'action': 'click','targetid': '38733553','targettype':'video', 'from': 'v4'});sendclick('38733553','video','/gicp/video/687/38733553.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210702/d3ed05329f97e731df536169b5c515b3_1625205718.png" alt="【萌少】体验服绿洲起源版本即将上线的四种娱乐玩法！"></div>
+        <div class="tbox"><p class="stitp1">【萌少】体验服绿洲起源版本即将上线的四种娱乐玩法！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/39017018.html" onclick="PTTSendReport({'action': 'click','targetid': '39017018','targettype':'video', 'from': 'v4'});sendclick('39017018','video','/gicp/video/687/39017018.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210709/ec8a76b1d74ba0296a4553afdc874c40_1625831799.jpg" alt="小猎豹揭秘：小红帽100%获胜技巧！踩大树爬上“无敌”点"></div>
+        <div class="tbox"><p class="stitp1">小猎豹揭秘：小红帽100%获胜技巧！踩大树爬上“无敌”点</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/39227522.html" onclick="PTTSendReport({'action': 'click','targetid': '39227522','targettype':'video', 'from': 'v4'});sendclick('39227522','video','/gicp/video/687/39227522.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210715/deb545c643ee12e2ae9faea403ec9172_1626339636.png" alt="橙嫂化身狼王硬刚持枪女猎人！淘汰5个小红帽，没想到都输了！"></div>
+        <div class="tbox"><p class="stitp1">橙嫂化身狼王硬刚持枪女猎人！淘汰5个小红帽，没想到都输了！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/39268512.html" onclick="PTTSendReport({'action': 'click','targetid': '39268512','targettype':'video', 'from': 'v4'});sendclick('39268512','video','/gicp/video/687/39268512.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210716/56910a56f14fbcc4ada4954f18f1c6a6_1626426475.png" alt="甜橙酱：猫鼠大作战这样玩 真仓鼠无处遁形 分分钟获得胜利！"></div>
+        <div class="tbox"><p class="stitp1">甜橙酱：猫鼠大作战这样玩 真仓鼠无处遁形 分分钟获得胜利！</p></div>
+        </a>
+    </li>
+
+                        </ul>
+                        <ul class="vlist_style_1 clearfix">
+                            
+    <li>
+        <a target="_blank" href="/gicp/video/687/39341314.html" onclick="PTTSendReport({'action': 'click','targetid': '39341314','targettype':'video', 'from': 'v4'});sendclick('39341314','video','/gicp/video/687/39341314.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210718/332b0418074402a214973602b53cde13_1626601665.png" alt="小红帽队友太坑了！不仅把大灰狼往我身边引，还站那看好戏！"></div>
+        <div class="tbox"><p class="stitp1">小红帽队友太坑了！不仅把大灰狼往我身边引，还站那看好戏！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38921950.html" onclick="PTTSendReport({'action': 'click','targetid': '38921950','targettype':'video', 'from': 'v4'});sendclick('38921950','video','/gicp/video/687/38921950.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210707/26b0660e40763738b6fbe9517e93686e_1625641495.jpg" alt="赛车射击应有尽有，随机趣味玩法，你会喜欢哪款"></div>
+        <div class="tbox"><p class="stitp1">赛车射击应有尽有，随机趣味玩法，你会喜欢哪款</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38936137.html" onclick="PTTSendReport({'action': 'click','targetid': '38936137','targettype':'video', 'from': 'v4'});sendclick('38936137','video','/gicp/video/687/38936137.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210707/b7e652223621d6f47e2dbfe30e53a5c8_1625655532.png" alt="揭秘小红帽与大灰狼新模式攻略！"></div>
+        <div class="tbox"><p class="stitp1">揭秘小红帽与大灰狼新模式攻略！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38752805.html" onclick="PTTSendReport({'action': 'click','targetid': '38752805','targettype':'video', 'from': 'v4'});sendclick('38752805','video','/gicp/video/687/38752805.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210702/b4ae531176cb99e679adaf67d864e0f4_1625231265.png" alt="体验服四大新模式爆料 这个暑假有得玩了！"></div>
+        <div class="tbox"><p class="stitp1">体验服四大新模式爆料 这个暑假有得玩了！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38950000.html" onclick="PTTSendReport({'action': 'click','targetid': '38950000','targettype':'video', 'from': 'v4'});sendclick('38950000','video','/gicp/video/687/38950000.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210708/12aeabe03f97392022def6e88280b69c_1625707629.jpg" alt="杂技比赛稳拿第一方法，乘坐敌人大脚车轻松获胜！"></div>
+        <div class="tbox"><p class="stitp1">杂技比赛稳拿第一方法，乘坐敌人大脚车轻松获胜！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/38953799.html" onclick="PTTSendReport({'action': 'click','targetid': '38953799','targettype':'video', 'from': 'v4'});sendclick('38953799','video','/gicp/video/687/38953799.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20210708/e617cab313462582ca81afbf044eeb6b_1625710214.jpg" alt="新版本快速变身女猎人！1人单挑3个狼人"></div>
+        <div class="tbox"><p class="stitp1">新版本快速变身女猎人！1人单挑3个狼人</p></div>
+        </a>
+    </li>
+
+                        </ul>
+                        <ul class="vlist_style_1 clearfix">
+                            
+    <li>
+        <a target="_blank" href="/gicp/video/687/71154006.html" onclick="PTTSendReport({'action': 'click','targetid': '71154006','targettype':'video', 'from': 'v4'});sendclick('71154006','video','/gicp/video/687/71154006.html')">
+        <div class="img_wrap"><img src="//puui.qpic.cn/vpic_cover/q0047gm4pgy/q0047gm4pgy_hz.jpg/640" alt="【回放】和平精英全球总决赛小组赛第1日 第1局"></div>
+        <div class="tbox"><p class="stitp1">【回放】和平精英全球总决赛小组赛第1日 第1局</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/69469017.html" onclick="PTTSendReport({'action': 'click','targetid': '69469017','targettype':'video', 'from': 'v4'});sendclick('69469017','video','/gicp/video/687/69469017.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/4485511541c69ff2a7b8aed165d78728/0/?width=450&height=300" alt="鲨鱼杯，我来上场解说啦！"></div>
+        <div class="tbox"><p class="stitp1">鲨鱼杯，我来上场解说啦！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/59223213.html" onclick="PTTSendReport({'action': 'click','targetid': '59223213','targettype':'video', 'from': 'v4'});sendclick('59223213','video','/gicp/video/687/59223213.html')">
+        <div class="img_wrap"><img src="//img.tgl.qq.com/cover/20230206/e0619cb92f2991fe687a2864a272b978_1675673553.png" alt="2023 PEL 春季赛 2月9日正式开战！"></div>
+        <div class="tbox"><p class="stitp1">2023 PEL 春季赛 2月9日正式开战！</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/58009397.html" onclick="PTTSendReport({'action': 'click','targetid': '58009397','targettype':'video', 'from': 'v4'});sendclick('58009397','video','/gicp/video/687/58009397.html')">
+        <div class="img_wrap"><img src="//puui.qpic.cn/vpic_cover/b0045o60rzg/b0045o60rzg_hz.jpg/640" alt="【回放】2022全球总决赛 决赛D3 海岛 第6场"></div>
+        <div class="tbox"><p class="stitp1">【回放】2022全球总决赛 决赛D3 海岛 第6场</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/58009396.html" onclick="PTTSendReport({'action': 'click','targetid': '58009396','targettype':'video', 'from': 'v4'});sendclick('58009396','video','/gicp/video/687/58009396.html')">
+        <div class="img_wrap"><img src="//puui.qpic.cn/vpic_cover/u004538jku2/u004538jku2_hz.jpg/640" alt="【回放】2022全球总决赛 决赛D3 沙漠 第5场"></div>
+        <div class="tbox"><p class="stitp1">【回放】2022全球总决赛 决赛D3 沙漠 第5场</p></div>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/gicp/video/687/58009395.html" onclick="PTTSendReport({'action': 'click','targetid': '58009395','targettype':'video', 'from': 'v4'});sendclick('58009395','video','/gicp/video/687/58009395.html')">
+        <div class="img_wrap"><img src="//puui.qpic.cn/vpic_cover/t0045zxswlc/t0045zxswlc_hz.jpg/640" alt="【回放】2022全球总决赛 决赛D3 海岛 第4场"></div>
+        <div class="tbox"><p class="stitp1">【回放】2022全球总决赛 决赛D3 海岛 第4场</p></div>
+        </a>
+    </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="sec3_right" exposure-tag="topranking,热门排行">
+                    <h3>热门排行</h3>
+                    <div class="sec3_right_data">
+                        <a href="javascirpt:;" class="active" data-rank="dpvlist">日</a>
+                        <span>/</span>
+                        <a href="javascirpt:;" data-rank="wpvlist">周</a>
+                        <span>/</span>
+                        <a href="javascirpt:;" data-rank="mpvlist">月</a>
+                    </div>
+                    <ul class="sec3_new_list"></ul>
+                    <a onclick="PTTSendClick('link','vmore2','查看更多2');" href="/gicp/video/694/0/4010/1.html"
+                       class="sec3_right_link" target="_blank" rel="noreferrer">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <!--Section3 end-->
+
+        <!--Section4-->
+        <div class="section4">
+            <div class="container clearfix video_style_1 strategy_style_1">
+                <div class="sec3_left sec4_left" exposure-tag="raiderscenter,攻略中心">
+                    <h3>攻略中心</h3>
+                    <ul class="video-ul strategy_ul">
+                        <li class="on">最新攻略</li>
+                        <li>攻楼技巧</li>
+                        <li>游戏设置</li>
+                    </ul>
+                    <a onclick="PTTSendClick('link','gomore6','查看更多');" class="cont-spr live_more game_more"
+                       href="/web201908/channel_strategy.html" title="查看更多" target="_blank" rel="noreferrer">查看更多</a>
+                    <ul class="vlist_style sec4_vlist">
+                           
+        <li>
+        <a target="_blank" href="/gicp/news/684/18406156.html" ontouchend="PTTSendReport({'action': 'click','targetid': '18406156','targettype':'news', 'from': 'v4'});sendclick('18406156','news','/gicp/news/684/18406156.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/abb3be81d4f0239d6521853c9957ed5e/0/?width=500&height=281" alt="超体新职业易上手必上分？没有人能在领域中打败她！"></div>
+        <div class="tbox">
+        <p class="stitp1">超体新职业易上手必上分？没有人能在领域中打败她！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>0</i></span>
+        <span class="itosp2">03-19</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/18406155.html" ontouchend="PTTSendReport({'action': 'click','targetid': '18406155','targettype':'news', 'from': 'v4'});sendclick('18406155','news','/gicp/news/684/18406155.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/81a1b0ed873ef4a44aee20b53ded3c24/0/?width=500&height=281" alt="全新武器联袂而至！一发射就燃起来了？！"></div>
+        <div class="tbox">
+        <p class="stitp1">全新武器联袂而至！一发射就燃起来了？！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>0</i></span>
+        <span class="itosp2">03-19</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/18406154.html" ontouchend="PTTSendReport({'action': 'click','targetid': '18406154','targettype':'news', 'from': 'v4'});sendclick('18406154','news','/gicp/news/684/18406154.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/15ee0bfe088aa1e1c33465f14f93c3a3/0/?width=500&height=281" alt="空岛基地来了一位身法哥，他开着岛在天上飞！"></div>
+        <div class="tbox">
+        <p class="stitp1">空岛基地来了一位身法哥，他开着岛在天上飞！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>0</i></span>
+        <span class="itosp2">03-19</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/18406153.html" ontouchend="PTTSendReport({'action': 'click','targetid': '18406153','targettype':'news', 'from': 'v4'});sendclick('18406153','news','/gicp/news/684/18406153.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/cb265d18005be90927ea5f044e7db04d/0/?width=500&height=281" alt="报告！拉力赛车在海岛“飙”爆了！"></div>
+        <div class="tbox">
+        <p class="stitp1">报告！拉力赛车在海岛“飙”爆了！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>1</i></span>
+        <span class="itosp2">03-19</span>
+        </div>
+        </a>
+        </li>
+
+
+
+
+
+
+
+                    </ul>
+                    <ul class="vlist_style sec4_vlist" style="display: none">
+                           
+        <li>
+        <a target="_blank" href="/gicp/news/684/15940803.html" ontouchend="PTTSendReport({'action': 'click','targetid': '15940803','targettype':'news', 'from': 'v4'});sendclick('15940803','news','/gicp/news/684/15940803.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/3b14530394b31c508b634f72959ffb97/0/?width=710&height=380" alt="新功能介绍丨手把手带你冲分，这个新系统上线，千万别错过！"></div>
+        <div class="tbox">
+        <p class="stitp1">新功能介绍丨手把手带你冲分，这个新系统上线，千万别错过！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>522258</i></span>
+        <span class="itosp2">04-13</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/13644172.html" ontouchend="PTTSendReport({'action': 'click','targetid': '13644172','targettype':'news', 'from': 'v4'});sendclick('13644172','news','/gicp/news/684/13644172.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/8580fd7d1cec3b4c9231e9622df49a6e/0/?width=720&height=333" alt="官方灵敏度推荐|新版本到来，教你ios如何调自己专属灵敏度"></div>
+        <div class="tbox">
+        <p class="stitp1">官方灵敏度推荐|新版本到来，教你ios如何调自己专属灵敏度</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>170254</i></span>
+        <span class="itosp2">01-28</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/13628479.html" ontouchend="PTTSendReport({'action': 'click','targetid': '13628479','targettype':'news', 'from': 'v4'});sendclick('13628479','news','/gicp/news/684/13628479.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/fd954bae08bda1897bfc467aaf6d472d/0/?width=2778&height=1284" alt="【详解】一分钟看遍四圣降临新版本五大细节优化"></div>
+        <div class="tbox">
+        <p class="stitp1">【详解】一分钟看遍四圣降临新版本五大细节优化</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>11815</i></span>
+        <span class="itosp2">01-27</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/9809621.html" ontouchend="PTTSendReport({'action': 'click','targetid': '9809621','targettype':'news', 'from': 'v4'});sendclick('9809621','news','/gicp/news/684/9809621.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/2a0260c05d4fbf86b9fa6a88d4fc0890/0/?width=1024&height=768" alt="【攻略】声音情报可视化，教你如何看懂小地图的标识！"></div>
+        <div class="tbox">
+        <p class="stitp1">【攻略】声音情报可视化，教你如何看懂小地图的标识！</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>40580</i></span>
+        <span class="itosp2">03-13</span>
+        </div>
+        </a>
+        </li>
+
+
+
+
+
+
+
+                    </ul>
+                    <ul class="vlist_style sec4_vlist" style="display: none">
+                           
+        <li>
+        <a target="_blank" href="/gicp/news/684/13667551.html" ontouchend="PTTSendReport({'action': 'click','targetid': '13667551','targettype':'news', 'from': 'v4'});sendclick('13667551','news','/gicp/news/684/13667551.html')">
+        <div class="img_wrap"><img src="//shp.qpic.cn/cfwebcap/0/a79c28793571917998b7f0ac126a0351/0/?width=1792&height=828" alt="新版本实用技巧|如何成功快速准确的攻楼"></div>
+        <div class="tbox">
+        <p class="stitp1">新版本实用技巧|如何成功快速准确的攻楼</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>30921</i></span>
+        <span class="itosp2">01-11</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/10256394.html" ontouchend="PTTSendReport({'action': 'click','targetid': '10256394','targettype':'news', 'from': 'v4'});sendclick('10256394','news','/gicp/news/684/10256394.html')">
+        <div class="img_wrap"><img src="//itea-cdn.qq.com/file/tgl/2020042822/e940c4c27b50954b00c1640827ce7e5e.1588084183.16e4a669dbf0c9f14287bb1d78aae70b.750x500_43408.jpg" alt="建筑攻防战有哪些通用技巧，灵活变通是关键"></div>
+        <div class="tbox">
+        <p class="stitp1">建筑攻防战有哪些通用技巧，灵活变通是关键</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>19279</i></span>
+        <span class="itosp2">04-29</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/10213454.html" ontouchend="PTTSendReport({'action': 'click','targetid': '10213454','targettype':'news', 'from': 'v4'});sendclick('10213454','news','/gicp/news/684/10213454.html')">
+        <div class="img_wrap"><img src="//itea-cdn.qq.com/file/tgl/2020042401/e940c4c27b50954b00c1640827ce7e5e.1587662788.57edb1880804bdd945874dafc7d46117.750x500_62566.jpg" alt="沙漠地图拳击馆攻略教学，教你如何进攻拳击馆"></div>
+        <div class="tbox">
+        <p class="stitp1">沙漠地图拳击馆攻略教学，教你如何进攻拳击馆</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>8991</i></span>
+        <span class="itosp2">04-24</span>
+        </div>
+        </a>
+        </li>
+
+
+   
+        <li>
+        <a target="_blank" href="/gicp/news/684/10203785.html" ontouchend="PTTSendReport({'action': 'click','targetid': '10203785','targettype':'news', 'from': 'v4'});sendclick('10203785','news','/gicp/news/684/10203785.html')">
+        <div class="img_wrap"><img src="//itea-cdn.qq.com/file/tgl/2020042307/e940c4c27b50954b00c1640827ce7e5e.1587597611.e61a146b1924e60ae002a9eefa2a309a.750x500_42061.jpg" alt="海岛地图建筑物攻防教学，教你如何玩转阳台二层楼"></div>
+        <div class="tbox">
+        <p class="stitp1">海岛地图建筑物攻防教学，教你如何玩转阳台二层楼</p>
+        <span class="itosp1">阅读量&nbsp;&nbsp;<i>10708</i></span>
+        <span class="itosp2">04-24</span>
+        </div>
+        </a>
+        </li>
+
+
+
+
+
+
+
+                    </ul>
+                </div>
+                <div class="sec3_right sec4_right" exposure-tag="boutiquesection,精品栏目">
+                    <h3>精品栏目</h3>
+                    <ul class="video-ul strategy_ul">
+                        <li class="on">官方漫画</li>
+                        <li>燃烧吧大局观</li>
+                        <li>盒子有话说</li>
+                        <li>快来扶我</li>
+                    </ul>
+                    <a onclick="PTTSendClick('link','gomore7','查看更多');" class="cont-spr live_more game_more"
+                       href="/web201908/channel_video.html" title="查看更多" target="_blank" rel="noreferrer">查看更多</a>
+                    <ul class="vlist_style sec4_vlist2">
+                        
+    <li>
+        <a href="/gicp/news/866/18316059.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18316059','targettype':'video', 'from': 'v4'});sendclick('18316059','video','/gicp/news/866/18316059.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/09d318e263547a32d910e0c070cd5fd6/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-034 前往未来"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-034 前往未来</p>
+                <span class="itosp1">294757</span>
+                <span class="itosp2">08-25</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/news/866/18313988.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18313988','targettype':'video', 'from': 'v4'});sendclick('18313988','video','/gicp/news/866/18313988.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/8ab1634ca8a4bc9a55c2c0344a40fc38/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-033 神兵行动"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-033 神兵行动</p>
+                <span class="itosp1">37558</span>
+                <span class="itosp2">08-18</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/news/866/18310863.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18310863','targettype':'video', 'from': 'v4'});sendclick('18310863','video','/gicp/news/866/18310863.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/c4d88980bb99bcc72543d8a17ce8ebdd/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-032 未完的劫数"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-032 未完的劫数</p>
+                <span class="itosp1">26439</span>
+                <span class="itosp2">08-11</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/news/866/18307238.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18307238','targettype':'video', 'from': 'v4'});sendclick('18307238','video','/gicp/news/866/18307238.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/2b2fd78abd7e0f6eeef77cf19d7e2951/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-031 大决战"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-031 大决战</p>
+                <span class="itosp1">22449</span>
+                <span class="itosp2">08-04</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/news/866/18300720.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18300720','targettype':'video', 'from': 'v4'});sendclick('18300720','video','/gicp/news/866/18300720.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/c2528a67cdf01e2759f2afac67203316/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-030 兵临城下"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-030 兵临城下</p>
+                <span class="itosp1">20535</span>
+                <span class="itosp2">07-28</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/news/866/18296920.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '18296920','targettype':'video', 'from': 'v4'});sendclick('18296920','video','/gicp/news/866/18296920.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/2b332978a8304c06cf66183202fd01d8/0/?width=600&height=800" alt="《和平精英：描边战神》冒险篇-029 超时空战役"></div>
+            <div class="tbox1"><p class="stitp1">《和平精英：描边战神》冒险篇-029 超时空战役</p>
+                <span class="itosp1">19867</span>
+                <span class="itosp2">07-21</span>
+            </div>
+        </a>
+    </li>
+
+                    </ul>
+                    <ul class="vlist_style sec4_vlist2" style="display: none">
+                        
+    <li>
+        <a href="/gicp/video/687/11309329.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '11309329','targettype':'video', 'from': 'v4'});sendclick('11309329','video','/gicp/video/687/11309329.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/vpic/0/c0969g1iz8a.png/0" alt="燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！"></div>
+            <div class="tbox1"><p class="stitp1">燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+                <span class="itosp1">66138</span>
+                <span class="itosp2">05-26</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/9300126.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9300126','targettype':'video', 'from': 'v4'});sendclick('9300126','video','/gicp/video/687/9300126.html')">
+            <div class="img_wrap1"><img src="//shp.qpic.cn/cfwebcap/0/3f3f88e935e38942ec03a43591815a92/0/?width=1280&height=720" alt="燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！"></div>
+            <div class="tbox1"><p class="stitp1">燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+                <span class="itosp1">39034</span>
+                <span class="itosp2">04-09</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/6360271.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '6360271','targettype':'video', 'from': 'v4'});sendclick('6360271','video','/gicp/video/687/6360271.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/qqvideo_ori/0/p30543k6b5k_1280_720/0" alt="【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道"></div>
+            <div class="tbox1"><p class="stitp1">【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+                <span class="itosp1">37100</span>
+                <span class="itosp2">03-19</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/7993411.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '7993411','targettype':'video', 'from': 'v4'});sendclick('7993411','video','/gicp/video/687/7993411.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/vpic/0/h3069e1zbws.png/0" alt="燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！"></div>
+            <div class="tbox1"><p class="stitp1">燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+                <span class="itosp1">73461</span>
+                <span class="itosp2">03-19</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/8087287.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '8087287','targettype':'video', 'from': 'v4'});sendclick('8087287','video','/gicp/video/687/8087287.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/qqvideo_ori/0/o3076s9ucqn_1280_720/0" alt="燃烧吧大局观12：连灭4个满编队，一路乱杀全靠这1个选点技巧！"></div>
+            <div class="tbox1"><p class="stitp1">燃烧吧大局观12：连灭4个满编队，一路乱杀全靠这1个选点技巧！</p>
+                <span class="itosp1">64176</span>
+                <span class="itosp2">03-19</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/6068057.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '6068057','targettype':'video', 'from': 'v4'});sendclick('6068057','video','/gicp/video/687/6068057.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/qqvideo_ori/0/t3051xyt5i8_1280_720/0" alt="特种作战2次极限1V4 多亏我搭配了这两个兵种！"></div>
+            <div class="tbox1"><p class="stitp1">特种作战2次极限1V4 多亏我搭配了这两个兵种！</p>
+                <span class="itosp1">11766</span>
+                <span class="itosp2">01-22</span>
+            </div>
+        </a>
+    </li>
+
+                    </ul>
+                    <ul class="vlist_style sec4_vlist2" style="display: none">
+                        
+    <li>
+        <a href="/gicp/video/687/9702760.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9702760','targettype':'video', 'from': 'v4'});sendclick('9702760','video','/gicp/video/687/9702760.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020042222/9caf0c0bc9fa3c0d3b9f1299afc2e365.1587564304.5141896d0dadb4be32f40d9531e9bec5.785x490_72527.jpg" alt="盒子有话说：周年庆典盛大开幕，蛋糕打卡欢乐庆生"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：周年庆典盛大开幕，蛋糕打卡欢乐庆生</p>
+                <span class="itosp1">12249</span>
+                <span class="itosp2">05-26</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/10074150.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '10074150','targettype':'video', 'from': 'v4'});sendclick('10074150','video','/gicp/video/687/10074150.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020043010/89736348a395e7ee141c9064d4b864a1.1588215395.36098d4399d991eaabcdf8826a446b08.785x490_762445.png" alt="盒子有话说：赛博纪元勇者当先，SS7赛季正式开启"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：赛博纪元勇者当先，SS7赛季正式开启</p>
+                <span class="itosp1">9610</span>
+                <span class="itosp2">05-26</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/9289460.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9289460','targettype':'video', 'from': 'v4'});sendclick('9289460','video','/gicp/video/687/9289460.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020040910/8e44740d7b5c46062ded8d5359dc949f.1586399459.d87a7fc0f2625107436845c6b72eb375.785x490_49079.jpg" alt="盒子有话说：创意工坊惊喜上新，圈中圈玩法强势来袭！"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：创意工坊惊喜上新，圈中圈玩法强势来袭！</p>
+                <span class="itosp1">19458</span>
+                <span class="itosp2">04-10</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/5372861.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '5372861','targettype':'video', 'from': 'v4'});sendclick('5372861','video','/gicp/video/687/5372861.html')">
+            <div class="img_wrap1"><img src="https://itea-cdn.qq.com/file/tgl/20191231/b1b3f75235ef20fbf40690702229659d.1577775419.8927974d7b5eee0745c490e781190521.640x360_96906.jpg" alt="盒子有话说：SS5赛季火热开启，极寒烤肉乐趣横生"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：SS5赛季火热开启，极寒烤肉乐趣横生</p>
+                <span class="itosp1">7453</span>
+                <span class="itosp2">04-09</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/5796494.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '5796494','targettype':'video', 'from': 'v4'});sendclick('5796494','video','/gicp/video/687/5796494.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/20200108/3d6e6250db88a1ed24d0a174706ce953.1578497511.32da39565f0cc18bd00f8d820f1b173c.1280x720_218693.jpg" alt="盒子有话说：最强攻略！手把手教你玩转特种作战"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：最强攻略！手把手教你玩转特种作战</p>
+                <span class="itosp1">3953</span>
+                <span class="itosp2">04-09</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/9107939.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9107939','targettype':'video', 'from': 'v4'});sendclick('9107939','video','/gicp/video/687/9107939.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020040214/b68f5226c7f104068a7b79385d6c3dbd.1585810439.25441392542238877d88dc70f320b35f.785x490_185868.jpg" alt="盒子有话说：最熟悉的新地图，新版本沙漠2.0升级归来"></div>
+            <div class="tbox1"><p class="stitp1">盒子有话说：最熟悉的新地图，新版本沙漠2.0升级归来</p>
+                <span class="itosp1">10092</span>
+                <span class="itosp2">04-03</span>
+            </div>
+        </a>
+    </li>
+
+                    </ul>
+                    <ul class="vlist_style sec4_vlist2" style="display: none">
+                        
+    <li>
+        <a href="/gicp/video/687/9876029.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9876029','targettype':'video', 'from': 'v4'});sendclick('9876029','video','/gicp/video/687/9876029.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020042618/b7a70f3e8374d24cf4b065fe6a940603.1587896674.b577bea12230d5fb1e5ff26a4d114ff6.640x360_227712.jpg" alt="《快来扶我》和平精英周年庆生计划 玩家心声大放送"></div>
+            <div class="tbox1"><p class="stitp1">《快来扶我》和平精英周年庆生计划 玩家心声大放送</p>
+                <span class="itosp1">8165</span>
+                <span class="itosp2">05-26</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/9108820.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '9108820','targettype':'video', 'from': 'v4'});sendclick('9108820','video','/gicp/video/687/9108820.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020040215/30e535568de1f9231e7d9df0f4a5a44d.1585811164.0ad7837fe629fd52118c41816406efe3.785x490_193417.jpg" alt="《快来扶我》女战神争当环保精英，高能剧情反转不断！"></div>
+            <div class="tbox1"><p class="stitp1">《快来扶我》女战神争当环保精英，高能剧情反转不断！</p>
+                <span class="itosp1">5869</span>
+                <span class="itosp2">04-21</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/8576532.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '8576532','targettype':'video', 'from': 'v4'});sendclick('8576532','video','/gicp/video/687/8576532.html')">
+            <div class="img_wrap1"><img src="//itea-cdn.qq.com/file/tgl/2020031717/98125d7e07be3f0af2525a14658440a5.1584437868.cbb1d94dd7f6f9a1d73af4470eb5906e.640x360_228636.jpg" alt="和平精英《快来扶我》地图大师打卡拳皇新场景大秀车技阴沟翻船"></div>
+            <div class="tbox1"><p class="stitp1">和平精英《快来扶我》地图大师打卡拳皇新场景大秀车技阴沟翻船</p>
+                <span class="itosp1">3008</span>
+                <span class="itosp2">03-18</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/6984356.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '6984356','targettype':'video', 'from': 'v4'});sendclick('6984356','video','/gicp/video/687/6984356.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/vpic/0/s3056h0ui6n.png/0" alt="和平精英《快来扶我》:快来“福”我，骚操作开启鼠年新模式"></div>
+            <div class="tbox1"><p class="stitp1">和平精英《快来扶我》:快来“福”我，骚操作开启鼠年新模式</p>
+                <span class="itosp1">6074</span>
+                <span class="itosp2">02-05</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/4947968.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '4947968','targettype':'video', 'from': 'v4'});sendclick('4947968','video','/gicp/video/687/4947968.html')">
+            <div class="img_wrap1"><img src="https://itea-cdn.qq.com/file/tgl/20191224/0d62823ecaf936f9dcb2ec102963ba35.1577178420.2d1634af3b4d56c43474f0f8d5402caf.785x490_342749.jpg" alt="和平精英《快来扶我》：这个主播不太冷，极寒模式上演圣诞狂欢"></div>
+            <div class="tbox1"><p class="stitp1">和平精英《快来扶我》：这个主播不太冷，极寒模式上演圣诞狂欢</p>
+                <span class="itosp1">2405</span>
+                <span class="itosp2">12-25</span>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/gicp/video/687/3968585.html" target="_blank" onclick="PTTSendReport({'action': 'click','targetid': '3968585','targettype':'video', 'from': 'v4'});sendclick('3968585','video','/gicp/video/687/3968585.html')">
+            <div class="img_wrap1"><img src="//puui.qpic.cn/vpic/0/o3020aat1w0.png/0" alt="和平精英《快来扶我》，极限挑战生存竟成车祸现场"></div>
+            <div class="tbox1"><p class="stitp1">和平精英《快来扶我》，极限挑战生存竟成车祸现场</p>
+                <span class="itosp1">2812</span>
+                <span class="itosp2">12-25</span>
+            </div>
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Section4 end-->
+
+        <!-- Section6 -->
+        <div class="section6">
+            <div class="sec6_content" exposure-tag="hpbigtouch,和平人气主播">
+                <div>
+                    <h3>和平人气主播</h3>
+                    <p class="more goTop">
+                        <a href="https://gp.qq.com/gicp/video/694/0/4009/1.html" target="_blank" rel="noreferrer"
+                           onclick="PTTSendClick('btn','gogmore','更多');">
+                            <span class="sprite icon-more" style="text-indent: -9999px">更多</span>
+                        </a>
+                    </p>
+                </div>
+
+                <ul class="section6_list">
+<!--                    <li>-->
+<!--                        <a href="https://www.huya.com/buqiuren" target="_blank"-->
+<!--                           onclick="PTTSendClick('link','bqr','不求人');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/buqiuren.png" alt="不求人">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">不求人</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="https://www.douyu.com/9595" target="_blank"-->
+<!--                           onclick="PTTSendClick('link','hls','花老湿');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/hualaoshi.jpg" alt="花老湿">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">花老湿</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="https://live.bilibili.com/2001" target="_blank"-->
+<!--                           onclick="PTTSendClick('link','nyyx','难言言x');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/nyyx.jpg" alt="难言言x">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">难言言x</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="https://www.douyu.com/9263298" target="_blank"-->
+<!--                           onclick="PTTSendClick('link','rr','若若');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/rr.jpg" alt="若若">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">若若</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="https://www.huya.com/400298" target="_blank"-->
+<!--                           onclick="PTTSendClick('link','sy','鲨鱼');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/shayu.png" alt="鲨鱼">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">鲨鱼</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="https://live.kuaishou.com/u/www0-0www " target="_blank"-->
+<!--                           onclick="PTTSendClick('link','wxw','王小歪');">-->
+<!--                            <div class="img-warp">-->
+<!--                                <img src="//game.gtimg.cn/images/gp/web201908/wangxiaowai.jpg" alt="王小歪">-->
+<!--                            </div>-->
+<!--                            <span class="sec6_text">王小歪</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+                </ul>
+
+                <ul class="second_ul" style="display: none;">
+                    <li>
+                        <a href="https://live.bilibili.com/2001" target="_blank"
+                           onclick="PTTSendClick('link','nyyx','难言言x');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/nyyx.jpg" alt="难言言x">
+                            </div>
+                            <span class="sec6_text">难言言x</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.douyu.com/9263298" target="_blank"
+                           onclick="PTTSendClick('link','rr','若若');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/rr.jpg" alt="若若">
+                            </div>
+                            <span class="sec6_text">若若</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.huya.com/400298" target="_blank"
+                           onclick="PTTSendClick('link','sy','鲨鱼');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/shayu.png" alt="鲨鱼">
+                            </div>
+                            <span class="sec6_text">鲨鱼</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://live.kuaishou.com/u/www0-0www " target="_blank"
+                           onclick="PTTSendClick('link','wxw','王小歪');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/wangxiaowai.jpg" alt="王小歪">
+                            </div>
+                            <span class="sec6_text">王小歪</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                           onclick="PTTSendClick('link','wzxb','五指小波');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/wzxb.jpg" alt="五指小波">
+                            </div>
+                            <div class="img-code">
+                                <img src="//game.gtimg.cn/images/gp/web201908/wzxb_code.png" alt="">
+                            </div>
+                            <span class="sec6_text">五指小波</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://egame.qq.com/453923297" target="_blank"
+                           onclick="PTTSendClick('link','xll','小力力');">
+                            <div class="img-warp">
+                                <img src="//game.gtimg.cn/images/gp/web201908/xll.png" alt="小力力">
+                            </div>
+                            <span class="sec6_text">小力力</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+        <!-- Section6 end -->
+
+        <!--Section5-->
+        <div class="section5">
+            <div class="container sec5_swiper_wrap" exposure-tag="gamefeatures,游戏特色">
+                <h3>游戏特色</h3>
+                <div class="swiper-container sec5_swiper">
+                    <div class="swiper-wrapper"></div>
+                    <a onclick="PTTSendClick('btn','arrowleft','向左');" class="arrow-left" href="javascript:;">向左</a>
+                    <a onclick="PTTSendClick('btn','arrowright','向右');" class="arrow-right" href="javascript:;">向右</a>
+                </div>
+            </div>
+        </div>
+        <!--Section5 end-->
+    </div>
+    <!--内容end-->
+
+    <!-- 动画 -->
+    <!-- <div class="animate_all">
+			<img class="air_por" src="//game.gtimg.cn/images/gp/web201908/air_por.png" alt="飞机">
+			<img class="air_drop" src="//game.gtimg.cn/images/gp/web201908/air_drop.png" alt="空投箱">
+			<img class="slogan" src="//game.gtimg.cn/images/gp/web201908/slogan.png" alt="slogan">
+			<a onclick="PTTSendClick('btn','closebtn','关闭');" class="close_btn" href="javascript:closeAnimate();">关闭</a>
+		</div> -->
+
+    <!--背景层-->
+    <div class="bg" style="position: absolute;top: 0;background: #fff">
+        <div class="bg1">背景1</div>
+        <div class="bg2">背景2</div>
+        <div class="bg3">背景3</div>
+    </div>
+    <!--背景层end-->
+    <!--底部二维码-->
+    <style>
+  .footer-new-code-box {
+    width: 100%;
+    height: 370px;
+    background: url(//game.gtimg.cn/images/gp/web201908/footer-bg-new.jpg) no-repeat center/cover;
+    box-sizing: border-box;
+    padding: 60px 0;
+  }
+
+  .footer-new-code {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-new-code::after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+
+  .footer-new-code li {
+    width: 110px;
+    float: left;
+    text-align: center;
+    color: #999ea6;
+    font-size: 18px;
+    position: relative;
+    margin: 0 45px 45px;
+  }
+
+  .footer-new-code li:first-child {
+    margin-left: 340px;
+  }
+
+  .footer-new-code li:nth-child(3) {
+    margin-right: 155px;
+  }
+
+  .footer-new-code li:last-child {
+    margin-right: 0;
+  }
+
+  .footer-new-code li a {
+    color: #999ea6;
+  }
+
+  .footer-new-code li:hover,
+  .footer-new-code li:hover a {
+    color: #e4af01;
+    cursor: pointer;
+  }
+
+  .footer-new-code .footer-code-icon {
+    width: 67px;
+    height: 67px;
+    display: block;
+    text-indent: -9999px;
+    margin: 0 auto;
+  }
+
+  .footer-new-code .footer-wx1-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weixin_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-wx1-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weixin_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-wb-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weibo_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-wb-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weibo_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-wx2-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weixin_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-wx2-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weixin_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-qq-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/qq_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-qq-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/qq_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-kuaishou-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/kuaishou_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-kuaishou-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/kuaishou_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-bilibili-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/bilibili_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-bilibili-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/bilibili_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-huya-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/huya_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-huya-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/huya_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-douyu-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/douyu_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-douyu-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/douyu_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-weishi-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weishi_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-weishi-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/weishi_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-qie-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/qie_pc.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-qie-code:hover .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/qie_pc_on.png) no-repeat center/cover;
+  }
+
+  .footer-new-code .footer-sph-code .footer-code-icon {
+    background: url(//game.gtimg.cn/images/gp/web201908/sph_pc.png) no-repeat center/cover;
+  }
+
+.footer-new-code .footer-sph-code:hover .footer-code-icon {
+  background: url(//game.gtimg.cn/images/gp/web201908/sph_pc_on.png) no-repeat center/cover;
+}
+
+  .footer-code-bg {
+    width: 136px;
+    height: 146px;
+    background: url(//game.gtimg.cn/images/gp/web201908/footer-code-bg.png) no-repeat center/cover;
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    margin-left: -65px;
+    box-sizing: border-box;
+    padding: 8px 8px 0 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 600ms;
+    z-index: 99;
+  }
+
+  .footer-new-code li:hover .footer-code-bg {
+    opacity: 1;
+  }
+
+  .footer-code-bg img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+<div class="footer-new-code-box">
+  <ul class="footer-new-code">
+    <li class="footer-wx1-code">
+      <i class="footer-code-icon">官方公众号</i>
+      <p>官方公众号</p>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/public/code3.png" alt="官方公众号" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-wb-code">
+      <a href="//m.weibo.cn/u/7095404909?jumpfrom=weibocom&amp;sudaref=wx.qq.com&amp;display=0&amp;retcode=6102"
+        target="_blank" onclick="PTTSendClick('link','gfwb','官方微博')">
+        <i class="footer-code-icon">官方微博</i>
+        <p>官方微博</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/public/code4.png" alt="官方微博" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-wx2-code">
+      <i class="footer-code-icon">微信用户社区</i>
+      <p>微信用户社区</p>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/public/code2.png" alt="微信用户社区" width="174" height="174">
+      </div>
+    </li>
+    <!--<li class="footer-qq-code">
+            <i class="footer-code-icon">QQ用户社区</i>
+            <p>QQ用户社区</p>
+            <div class="footer-code-bg">
+                <img src="//game.gtimg.cn/images/gp/public/code1.png" alt="QQ用户社区" width="174" height="174">
+            </div>
+        </li>-->
+    <li class="footer-bilibili-code" style="margin-left: 140px;">
+      <a href="//space.bilibili.com/434786180?from=search&amp;seid=7336372205025913489" target="_blank"
+        onclick="PTTSendClick('link','bilibili','bilibili')">
+        <i class="footer-code-icon">bilibili</i>
+        <p>bilibili</p>
+        <p>和平精英专区</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/code-bilibili.png" alt="bilibili" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-douyu-code">
+      <a href="//www.douyu.com/g_hpjy" target="_blank" onclick="PTTSendClick('link','douyu','斗鱼直播')">
+        <i class="footer-code-icon">斗鱼</i>
+        <p>斗鱼</p>
+        <p>和平精英专区</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/code_douyu.png" alt="斗鱼" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-huya-code">
+      <a href="//m.huya.com/g/3203" target="_blank" onclick="PTTSendClick('link','huya','虎牙直播')">
+        <i class="footer-code-icon">虎牙</i>
+        <p>虎牙</p>
+        <p>和平精英专区</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/code_huya.png" alt="虎牙" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-kuaishou-code">
+      <a href="//v.kuaishou.com/7NvGKC" target="_blank" onclick="PTTSendClick('link','kszb','快手直播')">
+        <i class="footer-code-icon">快手</i>
+        <p>快手</p>
+        <p>和平精英专区</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/code-kuaishou.png" alt="快手直播" width="174" height="174">
+      </div>
+    </li>
+    <li class="footer-sph-code">
+      <a href="javascript:;" onclick="PTTSendClick('link','sph','视频号')">
+        <i class="footer-code-icon">视频号</i>
+        <p>视频号</p>
+        <p>和平精英专区</p>
+      </a>
+      <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/sph-code.png" alt="视频号" width="174" height="174">
+      </div>
+      <!-- <div class="footer-code-bg">
+        <img src="//game.gtimg.cn/images/gp/web201908/code_qie.png" alt="视频号" width="174" height="174">
+      </div> -->
+    </li>
+  </ul>
+</div>
+    <!--底部二维码end-->
+
+    <!--游戏底部-->
+    <div class="footer-box foot">
+	<div id="gfooter" class="foot-dark" ams="38310/38335/m21918" dark="1" ieg-logo="1">
+		<a href="javascript:;" title="光子工作室群" class="foot_left logo1">
+			<img src="//game.gtimg.cn/images/gp/public/foot-logo3.png" alt="">
+		</a>
+		<div class="foot_bottom">
+			<p>
+				<em>抵制不良游戏</em>
+				<em>拒绝盗版游戏</em>
+				<em>注意自我保护</em>
+				<em>谨防受骗上当</em>
+				<em>适度游戏益脑</em>
+				<em>沉迷游戏伤身</em>
+				<em>合理安排时间</em>
+				<em>享受健康生活</em>
+			</p>
+		</div>
+	</div>
+	<script src="//game.gtimg.cn/images/js/2018foot/foot.js?v=34123" charset="utf-8"></script>
+<script>
+var links =  { service: {link: 'https://game.qq.com/tencent_other_contract.shtml'},
+									 private: {link: 'https://rule.tencent.com/rule/preview/53720e46-a5da-4bd5-b929-18f2b02f985c'},
+									 children: {link:'https://game.qq.com/tencent_other_children_privacy.shtml'}};
+GameFooter.addLinks(links);
+</script>
+</div>
+    <!--游戏底部end-->
+</div>
+<!--内容wrap end-->
+<!-- <canvas id="canvas"></canvas> -->
+<!--适龄弹窗-->
+<div class="year-pop" id="hint">
+    <h3 class="year-tit">适龄提示</h3>
+    <div class="hint-box">
+        <p class="hint-sm">提示说明：</p>
+        <p class="hint-desc">1、本游戏是一款玩法复杂的射击类游戏，适用于年满16周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。</p>
+        <p class="hint-desc">2、本游戏背景为特种兵训练，画面风格写实、人物和场景丰富多样，有丰富的音效来烘托游戏氛围。游戏主要玩法为需要多人进行的团队竞技，玩法基于较复杂的思维判断和操作，对玩家的逻辑思维和团队协作能力有一定要求，鼓励玩家在训练中不断提升和挑战自我。游戏中有基于语音和文字的陌生人社交系统，但社交系统的管理遵循相关法律法规。</p>
+        <p class="hint-desc">3、根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。<br/>
+            游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：<br/>
+            未满12周岁的用户不能付费；<br/>12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；<br/>16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。</p>
+        <p class="hint-desc">4、游戏在3D场景中的竞技和操作训练有助于锻炼玩家的手眼协调能力、空间感知能力和快速反应能力，基于团队的玩法可以提升玩家的沟通能力、团队协作能力和大局观，鼓励玩家互帮互助，维持良好的社群关系。</p>
+    </div>
+    <a href="javascript:closeDialog();" class="year-close" onclick="PTTSendClick('btn','closehint','关闭');"></a>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//game.gtimg.cn/images/js/fillnewsgicp/v1.3.js"></script>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//game.gtimg.cn/images/js/gzfe/fedc_ptt.js"></script>
+<script src="//ossweb-img.qq.com/images/js/comm/idata.tgads.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/comm/tgadshow.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/eas/eas.js?v=20151229"></script>
+<script src="//gicp.qq.com/wmp/v5/static/js/gicprp.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="/web201908/js/filterXSS.min.js"></script>
+<script src="/web201908/js/main.js"></script>
+
+
+<script>
+    //点击
+    function sendclick(id, type, url) {
+        if (typeof Gicprp.send == "function") {
+            Gicprp.send({
+                action_type: "click",
+                iuName: "web_pc",
+                contentId: id, //此处传入被点击内容的内容id
+                serviceType: "182",
+                contentType: type, //此处传入被点击内容的内容类型 video 或者是news
+                url: encodeURIComponent(url),
+            });
+        }
+    }
+</script>
+<script src="/web201908/js/showView-v4.js"></script>
+<script>
+    getNewData(".sec4_vlist li", "i"); // 攻略中心
+    getNewData(".sec4_vlist2 li", ".itosp1"); // 精品栏目
+</script>
+<script src="https://game.gtimg.cn/images/gp/gz/md5/md5.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = {
+        //设置网站属性
+        siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "main", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+        pageName: "首页", //必填项:页面中文名
+        project: "base", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+        osact: "pc", //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    };
+    if (typeof pgvMain == "function") pgvMain(); //千万不能忘记！
+
+    //弹窗
+    function TGDialogS(e) {
+        need("biz.dialog", function (Dialog) {
+            Dialog.show({
+                id: e,
+                bgcolor: '#000',
+                opacity: 70
+            });
+        });
+    }
+    function closeDialog() {
+        need("biz.dialog", function (Dialog) {
+            Dialog.hide();
+        });
+    }
+
+    var rollad = new tgAds({
+        ggID: "16476", //填写轮播广告所属的频道ID("频道管理"-"频道ID")
+        info: ["22733", "22734", "22735", "22736",
+            "23339"], //,info:'201206' //info的值可以有2种形式：1.直接填写需要的这几帧的广告位ID("广告位管"-"广告位ID") |或者| 2.填写广告位所属组ID("广告位管"-"广告位所属组ID"),然后会自动拉取此组下所有帧广告，然后按照广告位排序来输1234..帧
+        box: "ggBox", //[可选参数]填写放置广告的div的ID//以下参数都是可选！
+        pgv: "mainAd", // PTT点击'mainAd'：点击流名称，序号会自动加，会自动上:PTTSendClick('adRoll','mainAd1','轮播广告1')
+        auto: false, //[可选参数]false移动端禁止自动滚动，不添加此项或者true为定时自动滚
+        mouse: false, //[可选参,若点击触发请删掉此项]，true为鼠标经过小按钮触发翻页。false和默认为点击小按钮触发翻页。最好是点击触发，不然晃得眼
+        noUrl: false, //[可选参数]如果只纯展示不希望点击跳转请用这个参
+        callBack: function () {
+            //[可选参数]在广告准备完毕后运行的回调函
+            // console.log('一共有' + this.btns.length + '个广告')
+            var aList = $("#ggBox a");
+            for (var i = 0; i < aList.length; i++) {
+                $(aList[i]).find("img").attr("alt", aList[i].title);
+            }
+        },
+    });
+
+    // //生成流星雨js
+    // var stars = document.getElementById("stars");
+    //
+    // // js随机生成流星
+    // for (var j = 0; j < 30; j++) {
+    //   var newStar = document.createElement("div");
+    //   newStar.className = "star";
+    //   newStar.style.top = randomDistance(-100, 500) + "px";
+    //   newStar.style.left = randomDistance(-1000, 1300) + "px";
+    //   stars.appendChild(newStar);
+    // }
+    //
+    // // 封装随机数方法
+    // function randomDistance(max, min) {
+    //   var distance = Math.floor(Math.random() * (max - min + 1) + min);
+    //   return distance;
+    // }
+    // var star = document.getElementsByClassName("star");
+    //
+    // // 给流星添加动画延时
+    // for (var i = 0, len = star.length; i < len; i++) {
+    //   star[i].style.animationDelay = i % 6 == 0 ? "0s" : i * 0.8 + "s";
+    // }
+    //
+    // function closeAnimate() {
+    //   $(".animate_all").css("display", "none");
+    // }
+
+
+
+    // 活动中心切换
+    $(".acttit1").click(function (e) {
+        $(".actcon1").show();
+        $(".actcon2").hide();
+        $(".acttit1").addClass("onacttit");
+        $(".acttit2").removeClass("onacttit");
+    });
+    $(".acttit2").click(function (e) {
+        $(".actcon2").show();
+        $(".actcon1").hide();
+        $(".acttit2").addClass("onacttit");
+        $(".acttit1").removeClass("onacttit");
+    });
+
+    var activityList = {}; // 活动日历列表
+
+    // 获取活动日历列表
+    var getActivityList = function () {
+        $.ajax({
+            type: "method",
+            url: "https://gp.qq.com/zlkdatasys/data_zlk_gwhdrl.json",
+            type: "get",
+            async: true,
+            contentType: "application/json",
+            dataType: "jsonp",
+            jsonpCallback: "hdrlcallback",
+            success: function (res) {
+                var _data = res.hdrlz_27;
+                if (_data && _data.length > 0) {
+                    activityList = formatActivityList(_data);
+
+                    // 第一次初始化date,检查今天到本周最后一天是否有活动，如有则将当前天设置检查到第一天，如没有往下周检索
+                    var initRes = setDate(new Date(), activityList, true);
+
+                    if (initRes) return;
+
+                    // 往后两周检索
+                    for (var i = 0; i < 2; i++) {
+                        initRes = changeNextWeek(true);
+                        if (initRes) break;
+                    }
+
+                    if (!initRes) setDate(new Date(), activityList, "noActivity");
+                }
+            },
+        });
+    };
+
+    var formatActivityList = function (list) {
+        var temp = {};
+
+        for (var i = 0; i < list.length; i++) {
+            // 获取当前活动所处月份并格式化
+            var _mouth = list[i].yq_1e;
+            _mouth = _mouth < 10 ? "0" + _mouth : _mouth;
+
+            // 获取此月份下的所有活动
+            var _mouthActivityList = list[i].hdrl_84;
+            for (var j = 0; j < _mouthActivityList.length; j++) {
+                // 获取当前活动所处年份
+                var _year = _mouthActivityList[j].nf_c8;
+
+                // 获取当前活动的活动日期列表
+                var _dayList = _mouthActivityList[j].rqz_00;
+                for (var k = 0; k < _dayList.length; k++) {
+                    // 获取当前活动所处年月日
+                    var _day = _dayList[k].rq_af;
+                    var _date = _year + _mouth + _day;
+
+                    // 以所处年月日为key，活动项为value
+                    if (!temp[_date]) temp[_date] = [];
+                    temp[_date].push(_mouthActivityList[j]);
+                }
+            }
+        }
+
+        return temp;
+    };
+
+    // 设置日历底部圆点
+    var setBottomDot = function (_activityList, _dateArr, initIdx) {
+        var _initIdx = initIdx ? initIdx - 1 : -1;
+
+        for (var i = 0; i < _dateArr.length; i++) {
+            if (!!_activityList[_dateArr[i]]) {
+                $(".day-list li").eq(i).addClass("actday");
+            } else {
+                $(".day-list li").eq(i).removeClass("actday");
+            }
+
+            if (initIdx > -1 && _initIdx == i) {
+                $(".day-list li").eq(i).addClass("selectli");
+            }
+        }
+    };
+
+    // 点击日历展示不同的活动列表
+    var setCurActList = function (_activityList, _date) {
+        var _dayActivityList = _activityList[_date];
+        $(".edcon").remove();
+
+        if (!!_dayActivityList) {
+            $("#act-cont").css({
+                display: "block",
+            });
+            $(".noact").css({
+                display: "none",
+            });
+
+            for (var i = 0; i < _dayActivityList.length; i++) {
+                // 活动项容器
+                var activityCont = '<div class="edcon">';
+
+                // 活动标签容器
+                var labelCont = "";
+                if (!!_dayActivityList[i].hdlx_67) {
+                    labelCont =
+                        '<h5 class="zb"><span class="zb-tit">' +
+                        _dayActivityList[i].hdlx_67 +
+                        "</span></h5>";
+                }
+
+                // 活动标题容器
+                var titelCont =
+                    '<div class="edtit">' + _dayActivityList[i].hdmz_8b + "</div>";
+
+                // 活动时间容器
+                var actTimeCont =
+                    '<ul class="edco-list"><li>活动时间：<span class="edcon-time">' +
+                    _dayActivityList[i].hdrlsj_6d +
+                    "</span></li><li>活动奖励：</li></ul>";
+
+                // 活动奖励容器
+                var giftCont = '<div class="award-list">';
+                var _giftList = _dayActivityList[i].rljlz_21;
+                for (var j = 0; j < _giftList.length; j++) {
+                    giftCont +=
+                        '<div class="award"><img title=' +
+                        _giftList[j].jlmz_68 +
+                        " src=" +
+                        _giftList[j].jlt_05 +
+                        "><span title=" +
+                        _giftList[j].jlmz_68 +
+                        ' class="awd-name">' +
+                        _giftList[j].jlmz_68 +
+                        "</span></div>";
+                }
+                giftCont += "</div>";
+
+                // 参与按钮按钮容器
+                var linkCont = "";
+                if (!!_dayActivityList[i].hddz_f7) {
+                    var linkCont =
+                        '<a class="gomatch" href="' +
+                        _dayActivityList[i].hddz_f7 +
+                        '"onclick="PTTSendClick(' +
+                        "'link','gomatch1','去参与'" +
+                        ');">去参与</a>';
+                }
+
+                activityCont +=
+                    labelCont + titelCont + actTimeCont + giftCont + linkCont;
+
+                $("#act-cont").append(activityCont);
+            }
+
+            return;
+        }
+        $("#act-cont").css({
+            display: "none",
+        });
+
+        $(".noact").css({
+            display: "block",
+        });
+    };
+
+    // 活动日历
+    var yearObj = $(".year")[0];
+    var monthObj = $(".month")[0];
+    var lis = $(".day-list li");
+    var currentFirstDate;
+    // 获取一周的星期
+    var formatDate = function (date) {
+        var day = date.getDate();
+        return day;
+    };
+    // 返回所有li的年月日
+    var allnyr = function (date) {
+        var year = date.getFullYear().toString();
+        // 进行判断，给1-9月份前面加0
+        if (date.getMonth() + 1 < 10) {
+            var month = "0" + (date.getMonth() + 1).toString();
+        } else {
+            var month = (date.getMonth() + 1).toString();
+        }
+        var day = date.getDate().toString();
+        return year + month + day;
+    };
+    // 数组存储所有li的年月日
+    var allnyrArr = [];
+    // 用法存储li的date
+    var allnyrLen = "";
+    // 获取当前月份
+    var nowMonth = function () {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        if (month < 10) {
+            return "0" + month;
+        } else {
+            return month;
+        }
+    };
+    // 获取当前年份
+    var nowYear = function (date) {
+        var date = new Date();
+        var year = date.getFullYear();
+        return year;
+    };
+    // 获取当前日
+    var nowDate = function () {
+        var date = new Date();
+        var day = date.getDate();
+        return day;
+    };
+    var addDate = function (date, n) {
+        date.setDate(date.getDate() + n);
+        return date;
+    };
+    monthObj.innerHTML = nowMonth() + "月";
+    yearObj.innerHTML = nowYear() + "年";
+    var setDate = function (date, _activityList, isInit) {
+        var hasInit = false;
+        var initIdx = 0;
+        var week = date.getDay() - 1;
+        date = addDate(date, week * -1);
+        currentFirstDate = new Date(date);
+        // 当日的日期，与li的内容进行对比，改变当前的样式
+        var _mouth = nowMonth();
+        var _year = nowYear();
+        var taDate = nowDate();
+        var nowYM = _year.toString() + _mouth.toString();
+        for (var i = 0; i < 7; i++) {
+            // 将返回的年月日，赋值给一个变量，防止重复调用addDate函数改变date。
+            allnyrLen = allnyr(i == 0 ? date : addDate(date, 1));
+            // 因为返回的字符串的长度有7或8，为了给li赋值日期，进行长度的判断。
+            var _day = null;
+            var YM = allnyrLen.substr(0, 6);
+            if (allnyrLen.length === 7) {
+                _day = allnyrLen.substr(6);
+            } else {
+                _day = allnyrLen.substr(6, 7);
+            }
+            // 将每个li的date放入数组中
+            allnyrArr.push(allnyrLen);
+            lis[i].innerHTML = _day;
+
+            // 初始化判断
+            if (!isInit || hasInit) continue;
+
+            // 当前日期有活动
+            if (
+                (YM >= nowYM && _day >= taDate && _activityList[allnyrLen]) ||
+                (isInit == "noActivity" && _day == taDate)
+            ) {
+                hasInit = true;
+                initIdx = i + 1;
+                lis[i].style.color = "#feb012";
+                lis[i].style.border = "1px solid #feb012";
+                lis[i].style.borderRadius = "100%";
+                // lis[i].style.fontWeight = 'bold';
+                lis[i].classList.add("setfontwei");
+                setCurActList(_activityList, allnyrLen);
+            }
+        }
+
+        setBottomDot(_activityList, allnyrArr, initIdx);
+        return hasInit;
+    };
+    // 给每个li添加一个点击事件，打印对应的索引值,与保存年月日的数组进行对比。
+    $(".day-list li").on("click", function () {
+        var liIndex = $(this).index();
+        // 进行判断，点击li的date的长度为7和8，然后截取对应的年月
+        monthObj.innerHTML =
+            allnyrArr[liIndex].substr(0, 6).substr(4, 6) + "月";
+        yearObj.innerHTML = allnyrArr[liIndex].substr(0, 4) + "年";
+        $(this).addClass("selectli");
+        $(this).siblings().removeClass("selectli");
+        $(this).siblings().addClass("nofotwei");
+        // 当日的日期，与li的内容进行对比，改变当前的样式
+        var taDate = nowDate();
+        for (var i = 0; i < 7; i++) {
+            // 当前日期显示为黄色
+            if (parseInt(lis[i].innerHTML) === taDate) {
+                lis[i].style.color = "";
+                lis[i].style.border = "";
+                lis[i].style.borderRadius = "";
+            }
+        }
+
+        setCurActList(activityList, allnyrArr[liIndex]);
+    });
+
+    // 点击下一周日期
+    function changeNextWeek(isInit) {
+        // 每次点击下一周，都清空一次保存年月日的数组
+        allnyrArr = [];
+        var initRes = setDate(addDate(currentFirstDate, 7), activityList);
+        // 点击下一周，清空所有（当前）样式
+        for (var i = 0; i < 7; i++) {
+            lis[i].style.color = "";
+            lis[i].style.border = "";
+            lis[i].style.borderRadius = "";
+            lis[i].classList.add("nofotwei");
+        }
+        $(".day-list li").removeClass("selectli");
+
+        return initRes;
+    }
+
+    // 点击上一周日期
+    function changeLastWeek() {
+        allnyrArr = [];
+        setDate(addDate(currentFirstDate, -7), activityList);
+        // 点击下一周，清空所有（当前）样式
+        for (var i = 0; i < 7; i++) {
+            lis[i].style.color = "";
+            lis[i].style.border = "";
+            lis[i].style.borderRadius = "";
+            lis[i].classList.add("nofotwei");
+        }
+        $(".day-list li").removeClass("selectli");
+    }
+
+    //主播列表
+    function getAnchorList(){
+        $.ajax({
+            url:'https://apps.game.qq.com/cmc/cross?serviceId=182&source=douyu&chanid=6530&typeids=1&filter=channel'
+        }).then(res=>{
+            console.log(res)
+            let html = ''
+            res.data.items.forEach((item,index)=>{
+               html += `
+                  <li>
+                      <a href="${item.sRedirectURL}" target="_blank"
+                         onclick="PTTSendClick('link','anchor${index+1}','${item.sTitle}');">
+                          <div class="img-warp">
+                              <img src="${item.sIMGNew}" alt="${item.sTitle}">
+                          </div>
+                          <span class="sec6_text">${item.sTitle}</span>
+                      </a>
+                  </li>
+               `
+            })
+            $('.section6_list').append(html)
+        })
+    }
+    getAnchorList();
+    getActivityList();
+</script>
 </body>
+
 </html>
+
 
 
